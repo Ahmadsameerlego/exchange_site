@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style-ltr.css"> -->
+    <title>طريقةالدفع</title>
+</head>
+<body>
+    <!-- start landing page -->
+    <section  id="stickyNav">
+    <div class="main-container">
+        <!-- start navbar -->
+            <div class="landingPage h-auto">
+                
+                <nav class="row navbarLinksnavbar navbar-expand-sm pt-4 d-flex align-items-baseline">
+                    <ul class="navbar-nav col-md-7 d-flex justify-content-between">
+
+                        <div class="toggleIcon" style="position: absolute;
+                        left: 55px;
+                        top: 15px;">
+                            <i class="fas fa-times" onclick="remNav()" ></i>
+                        </div>
+
+                        <li class="nav-item"><a href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a href="universties.html">الجامعات</a></li>
+                        <li class="nav-item"><a href="myBooks.html">المواد</a></li>
+                        <li class="nav-item"><a href="#">اتصل بنا</a></li>
+
+                        
+
+                        <div class="userDropdown" style="background-color: transparent;">
+                            <div class="dropdown d-flex align-items-baseline">
+                        
+                                <button class="btn btn-default dropdown-toggle" type="button" 
+                                        id="dropdownMenu1" data-toggle="dropdown" 
+                                        aria-haspopup="true" aria-expanded="true">
+                                        <i class="fas fa-chevron-down"></i>
+                                        <span>Ahmed Samer</span>
+                                        <img src="images/Ellipse_3516-removebg-preview.png" alt="" class="user">
+                                </button>
+                                <ul class="dropdown-menu checkbox-menu allow-focus" style="transform: translate(0);" aria-labelledby="dropdownMenu1">
+                                    <li>
+                                        <a href="#" class="d-flex justify-content-start">
+                                            <img src="images/t 32080.jpg" alt="">
+                                            <p>المعلومات الشخصية</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex justify-content-start">
+                                            <img src="images/d32080.png" alt="">
+                                            <p>المعلومات الجامعية</p>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a href="#" class="d-flex justify-content-start">
+                                            <img src="images/r 32080.jpg" alt="">
+                                            <p>المواد المحفوظة</p>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a href="#" class="d-flex justify-content-start">
+                                            <img src="images/r 32080.jpg" alt="">
+                                            <p>طلبات الشراء</p>
+                                        </a>
+                                    </li>
+                                    <div class="logoutlink d-flex align-items-center justify-content-center" style="padding-left: 40%;">
+                                        <a href="#"> تسجيل الخروج</a>
+                                        <i class="fas fa-sign-out-alt"></i>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+    
+                    
+    
+                    <div class="userActions col-md-5 d-flex justify-content-around align-items-baseline">
+                        <div class="addClass">
+                            <i class="fas fa-bars" onclick="addNav()"></i>
+                        </div>
+                        <div class="alert">
+                            <a href="#"><i class="fas fa-bell"></i></a>
+                            <span>0</span>
+                        </div>
+                        <div class="shCar">
+                            <a href="chart2.html"><i class="fas fa-shopping-cart"></i></a>
+                            <span>0</span>
+                        </div>
+    
+                        <div class="lang">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                    <span>EN</span>
+                                    <i class="fas fa-globe"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">العربية</a></li>
+                                    <li><a href="#">الانجليزية</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="logo">
+                            <a href="#"><img src="images/Group 31846.png" alt="" class="logoImage"></a>
+                        </div>
+                    </div>
+                </nav>
+    </section>
+    <!-- end navbar -->
+
+    <!-- start content -->
+    <div class="main-container">
+        <div class="bookContent">
+            <section id="subContent">
+                <!-- payment method -->
+                <form action="succeedLogin2.html">
+
+                    <div class="paymentMethods d-flex justify-content-center">
+
+                        <div class="paymentItem d-flex justify-content-between">
+                            <div>
+                                <input type="radio" id="mastercard" name="gender"/>
+                                <label for="mastercard"></label>
+                            </div>
+                            <div>
+                                <img src="images/mastercard.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="paymentItem d-flex justify-content-between">
+                            <div>
+                                <input type="radio" id="visa" name="gender" />
+                                <label for="visa"></label>
+                            </div>
+                            <div>
+                                <img src="images/visa.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="paymentItem d-flex justify-content-between">
+                            <div>
+                                <input type="radio" id="mada" name="gender" />
+                                <label for="mada"></label>
+                            </div>
+                            <div>
+                                <img src="images/مدى.png" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="customerInformation d-flex justify-content-center flex-column">
+                        <div class="userCard d-flex align-items-center">
+                            <label for="">رقم البطاقة</label>
+                            <input type="number" name="" id="">
+                        </div>
+
+                        <div class="userCard d-flex align-items-center">
+                            <label for="">اسم حامل البطاقة الالي</label>
+                            <input type="text" name="" id="">
+                        </div>
+
+                        <div class="userCardSmall d-flex align-items-center">
+                            <label for="">الصلاحية</label>
+                            <div class="d-flex smallInput">
+                                <div class="d-flex align-items-center">
+                                    <label for="">سنة</label>
+                                    <input type="number">
+                                </div>
+                                <div  class="d-flex align-items-center">
+                                    <label for="">شهر</label>
+                                    <input type="number">
+                                </div>
+                                <div  class="d-flex align-items-center">
+                                    <label for="">رمزالتحقق</label>
+                                    <input type="number">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    
+                        <p class="totalPrice text-center">الاجمالي<span>70</span> ريال سعودي</p>
+                        <button class="sendOrder paymentEnsh">تاكيد الدفع</button>
+                    
+                </form>
+            </section>
+        </div>
+    </div>
+    <!-- end content -->
+    </div>
+    <script src='js/all.min.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

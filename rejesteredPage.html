@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style-ltr.css"> -->
+
+    <title>الصفحة الرئيسية</title>
+</head>
+<body>
+
+
+        <!-- start land page -->
+        <div>
+            <!-- start navbar -->
+            <div class="main-container">
+                <nav class="row navbarLinksnavbar navbar-expand-sm pt-4 d-flex align-items-baseline">
+                    <ul class="navbar-nav col-md-7 d-flex justify-content-between">
+
+                        <div class="toggleIcon" style="position: absolute;
+                        left: 55px;
+                        top: 15px;">
+                            <i class="fas fa-times" onclick="remNav()" ></i>
+                        </div>
+
+                        <li class="nav-item"><a href="rejesteredPage.html" class="active">الرئيسية</a></li>
+                        <li class="nav-item"><a href="universties.html">الجامعات</a></li>
+                        <li class="nav-item"><a href="RegesMyBooks.html">المواد</a></li>
+                        <li class="nav-item"><a href="callUs.html">اتصل بنا</a></li>
+
+                        
+
+                        <div class="userDropdown" style="background-color: transparent;">
+                            <div class="dropdown d-flex align-items-baseline">
+                        
+                                <button class="btn btn-default dropdown-toggle" type="button" 
+                                        id="dropdownMenu1" data-toggle="dropdown" 
+                                        aria-haspopup="true" aria-expanded="true">
+                                        <i class="fas fa-chevron-down"></i>
+                                        <span>Ahmed Samer</span>
+                                        <img src="images/Ellipse_3516-removebg-preview.png" alt="" class="user">
+                                </button>
+                                <ul class="dropdown-menu checkbox-menu allow-focus" style="transform: translate(0);" aria-labelledby="dropdownMenu1">
+                                    <li>
+                                        <a href="personalInformation.html" class="d-flex justify-content-start" data-value="#home-tab">
+                                            <img src="images/t 32080.jpg" alt="">
+                                            <p>المعلومات الشخصية</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex justify-content-start" data-value="#profile-tab">
+                                            <img src="images/d32080.png" alt="">
+                                            <p>المعلومات الجامعية</p>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a href="#" class="d-flex justify-content-start" data-value="#contact-tab">
+                                            <img src="images/r 32080.jpg" alt="">
+                                            <p>المواد المحفوظة</p>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a href="#" class="d-flex justify-content-start" data-value="#buys-tab">
+                                            <img src="images/r 32080.jpg" alt="">
+                                            <p>طلبات الشراء</p>
+                                        </a>
+                                    </li>
+                                    <div class="logoutlink d-flex align-items-center justify-content-center" style="padding-left: 40%;">
+                                        <a href="#"> تسجيل الخروج</a>
+                                        <i class="fas fa-sign-out-alt"></i>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+    
+                    
+    
+                    <div class="userActions col-md-5 d-flex justify-content-around align-items-baseline">
+                        <div class="addClass">
+                            <i class="fas fa-bars" onclick="addNav()"></i>
+                        </div>
+                        <div class="alert">
+                            <a href="alert.html"><i class="fas fa-bell"></i></a>
+                            <span>0</span>
+                        </div>
+                        <div class="shCar">
+    
+                            <a href="chart2.html"><i class="fas fa-shopping-cart"></i></a>
+                            <span>0</span>
+                        </div>
+    
+                        <div class="lang">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                    <span>EN</span>
+                                    <i class="fas fa-globe"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">العربية</a></li>
+                                    <li><a href="#">الانجليزية</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="logo">
+                            <a href="#"><img src="images/Group 31846.png" alt="" class="logoImage"></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- end navbar -->
+        
+            <!-- start carousal => made with bootstrap v.4 -->
+            <div class="carousl" style="height:92vh">
+                <div class="row">
+        
+                    <div id="carousel-example-generic" class="carousel slide carousel-fade carousel-animate carousel-bg" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox" style="position: relative;">
+        
+                            <!-- start socail icons facebook twiter ...-->
+                            <div class="socialIcons">
+                                <a href="#"><span class="facebook"><i class="fab fa-facebook-f"></i></span></a>
+                                <a href="#"><span class="twitter"><i class="fab fa-twitter"></i></span></a>
+                                <a href="#"><span class="instagram"><i class="fab fa-instagram"></i></span></a>
+                                <a href="#"><span class="youtube"><i class="fab fa-youtube"></i></span></a>
+                            </div>
+                            <!-- end socail icons -->
+        
+                            <!-- start slogans => الشعارات اسفل الصفحة -->
+                            <div class="slogans d-flex  justify-content-center align-items-baseline">
+                                <div class="sloganImg">
+                                    <img src="images/ورزز.png" alt="slogan">
+                                </div>
+                                <div class="sloganImg">
+                                    <img src="images/ورزز.png" alt="slogan">
+                                </div>
+                                <div class="sloganImg">
+                                    <img src="images/ورزز.png" alt="slogan">
+                                </div>
+                                <div class="sloganImg">
+                                    <img src="images/ورزز.png" alt="slogan">
+                                </div>
+                                <div class="sloganImg">
+                                    <img src="images/ورزز.png" alt="slogan">
+                                </div>
+                                <div class="sloganImg">
+                                    <img src="images/ورزز.png" alt="slogan">
+                                </div>
+                            </div>
+                            <!-- end slogans => الشعارات اسفل الصفحة -->
+        
+        
+                            <!-- start carousal items content -->
+                            <!-- start single carousal item -->
+                            <div class="item active" style="background-image:linear-gradient(#000000c2,#000000c7), url(images/Mask\ Group\ 47.png);">
+                                <!-- محتويات كل slider -->
+                                <div class="carousel-caption">
+                                    <div class="lanPaContent zoomInDown animated col-lg-7">
+                                        <h3 class="contentText fadeInLeft animated"> نوفر جميع المواد التعليمية بكل تخصصاتها بكافة الجامعات السعودية </h3>
+                    
+                                        <form action=""  class="slideInRight animated">
+                                            <div class="input-group mb-3">
+                            
+                                                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="ابحث عن اسم الجامعة , الكلية , القسم, المادة ....">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-default" style="background-color: #EBB92F;">بحث</span>
+                                                </div>
+                                                <i class="fas fa-search"></i>
+                                            </div>
+                                            
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end single carousal item -->
+        
+                            <!-- start single carousal -->
+                            <div class="item" style="background-image: linear-gradient(#000000c2,#000000c7),url(images/Mask\ Group\ 56.png);">
+                                <div class="carousel-caption">
+                                    <div class="lanPaContent fadeInUp animated col-lg-7">
+                                        <h3 class="contentText fadeInRight animated"> نوفر جميع المواد التعليمية بكل تخصصاتها بكافة الجامعات السعودية </h3>
+                    
+                                        <form action=""  class="slideInLeft animated">
+                                            <div class="input-group mb-3">
+                            
+                                                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="ابحث عن اسم الجامعة , الكلية , القسم, المادة ....">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-default" style="background-color: #EBB92F;">بحث</span>
+                                                </div>
+                                                <i class="fas fa-search"></i>
+                                            </div>
+                                            
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end single carousal -->
+        
+                            <!-- start single carousal -->
+                            <div class="item" style="background-image:linear-gradient(#000000c2,#000000c7),url(images/Mask\ Group\ 47.png);">
+                                <div class="carousel-caption">
+                                    <div class="lanPaContent rotateInDownRight animated col-lg-7">
+                                        <h3 class="contentText fadeInLeft animated"> نوفر جميع المواد التعليمية بكل تخصصاتها بكافة الجامعات السعودية </h3>
+                    
+                                        <form action=""  class="slideInRight animated">
+                                            <div class="input-group mb-3">
+                            
+                                                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="ابحث عن اسم الجامعة , الكلية , القسم, المادة ....">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-default" style="background-color: #EBB92F;">بحث</span>
+                                                </div>
+                                                <i class="fas fa-search"></i>
+                                            </div>
+                                            
+                                        </form>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!-- end single carousal -->
+                            <!-- end carousal items content -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end carousal => made with bootstrap v.4 -->
+        </div>
+        <!-- end land page -->
+
+        <!-- start filter dropdown -->
+        <div class="main-container">
+            <div class="row">
+                <div class="filtersDropdown d-flex align-items-baseline justify-content-start col-md-12">
+                    <!-- single dropdown -->
+                
+                    <div class="dropdown d-flex align-items-baseline">
+                        
+                        <button class="btn btn-default dropdown-toggle" type="button" 
+                                id="dropdownMenu1" data-toggle="dropdown" 
+                                aria-haspopup="true" aria-expanded="true">
+                                <i class="fas fa-globe"></i>
+                                <span>اسم البلد</span>
+                                <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu checkbox-menu allow-focus" aria-labelledby="dropdownMenu1">
+                            <div class="search">
+                                <input type="text" class="form-control" id="myInput"aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="ابحث عن اسم الجامعة ....">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        <li >
+                            <label class="d-flex justify-content-between">
+                                <div class="name">
+                                    <img src="images/sa.jpg" alt="asia">
+                                    <span>السعودية</span>
+                                </div>
+                                <input type="checkbox"> 
+                            </label>
+                        </li>
+                        <li >
+                            <label class="d-flex justify-content-between">
+                                <div class="name">
+                                    <img src="images/jor.png" alt="asia">
+                                    <span>الاردن</span>
+                                </div>
+                                <input type="checkbox"> 
+                            </label>
+                        </li>
+                        <li >
+                            <label class="d-flex justify-content-between">
+                                <div class="name">
+                                    <img src="images/auman.png" alt="asia">
+                                    <span>سلطنة عمان</span>
+                                </div>
+                                <input type="checkbox"> 
+                            </label>
+                        </li>
+                        <li >
+                            <label class="d-flex justify-content-between">
+                                <div class="name">
+                                    <img src="images/pal.png" alt="asia">
+                                    <span>فلسطين</span>
+                                </div>
+                                <input type="checkbox"> 
+                            </label>
+                        </li>
+                        <li >
+                            <label class="d-flex justify-content-between">
+                                <div class="name">
+                                    <img src="images/leb.png" alt="asia">
+                                    <span>لبنان</span>
+                                </div>
+                                <input type="checkbox"> 
+                            </label>
+                        </li>
+                        <div class="allLinks">
+                            <a href="#"> كل البلاد</a>
+                        </div>
+                        </ul>
+                    </div>
+                    <!-- end single dropdown -->
+
+                    <div class="dropdown d-flex align-items-baseline">
+
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <i class="fas fa-flag"></i>
+                                    <span>اسم المدينة</span>
+                                    <i class="fas fa-chevron-down"></i>
+                            </button>
+                        <ul class="dropdown-menu checkbox-menu allow-focus" aria-labelledby="dropdownMenu1">
+                            <div class="search">
+                                <input type="text" class="form-control" id="myInput" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="ابحث عن اسم الجامعة ....">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <li>
+                                <label class="d-flex justify-content-between">
+                                    <div class="name">
+                                        <img src="images/الرياض.jfif">
+                                        <span>الرياض</span>
+                                    </div>
+                                    <input type="checkbox"> 
+                                </label>
+                            </li>
+                            <li>
+                                <label class="d-flex justify-content-between">
+                                    <div class="name">
+                                        <img src="images/المدينة.jfif">
+                                        <span>المدينة المنورة</span>
+                                    </div>
+                                    <input type="checkbox"> 
+                                </label>
+                            </li>
+                            <li>
+                                <label class="d-flex justify-content-between">
+                                    <div class="name">
+                                        <img src="images/مكة.jfif">
+                                        <span> مكة المكرمة</span>
+                                    </div>
+                                    <input type="checkbox"> 
+                                </label>
+                            </li>
+                            <li>
+                                <label class="d-flex justify-content-between">
+                                    <div class="name">
+                                        <img src="images/جدة.jfif">
+                                        <span>جدة</span>
+                                    </div>
+                                    <input type="checkbox"> 
+                                </label>
+                            </li>
+                            <li>
+                                <label class="d-flex justify-content-between">
+                                    <div class="name">
+                                        <img src="images/جدة.jfif">
+                                        <span>الدمام</span>
+                                    </div>
+                                    <input type="checkbox"> 
+                                </label>
+                                <label class="d-flex justify-content-between">
+                                    <div class="name">
+                                        <img src="images/جدة.jfif">
+                                        <span>الخبر</span>
+                                    </div>
+                                    <input type="checkbox"> 
+                                </label>
+                            </li>
+                            <div class="allLinks">
+                                <a href="#"> كل الفرق</a>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown d-flex align-items-baseline">
+                        
+                        <button class="btn btn-default dropdown-toggle" type="button" 
+                                id="dropdownMenu1" data-toggle="dropdown" 
+                                aria-haspopup="true" aria-expanded="true">
+                                <i class="fas fa-university"></i>
+                                <span>اسم الجامعة</span>
+                                <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu checkbox-menu allow-focus" aria-labelledby="dropdownMenu1">
+                            <div class="search">
+                                <input type="text" class="form-control" id="myInput"aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="ابحث عن اسم الجامعة ....">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        <li >
+                            <label class="d-flex justify-content-between">
+                                <div class="name">
+                                    <img src="images/fesal.jfif" alt="asia">
+                                    <span>جامعة الملك فيصل</span>
+                                </div>
+                                <input type="checkbox"> 
+                            </label>
+                        </li>
+                        <li >
+                            <label class="d-flex justify-content-between">
+                                <div class="name">
+                                    <img src="images/abdelaz.jfif" alt="asia">
+                                    <span>جامعة الملك عبدالعزيز</span>
+                                </div>
+                                <input type="checkbox"> 
+                            </label>
+                        </li>
+                        <li >
+                            <label class="d-flex justify-content-between">
+                                <div class="name">
+                                    <img src="images/saud.jfif" alt="asia">
+                                    <span>جامعة الملك سعود</span>
+                                </div>
+                                <input type="checkbox"> 
+                            </label>
+                        </li>
+                        <li >
+                            <label class="d-flex justify-content-between">
+                                <div class="name">
+                                    <img src="images/fesal.jfif" alt="asia">
+                                    <span>جامعة الملك فيصل</span>
+                                </div>
+                                <input type="checkbox"> 
+                            </label>
+                        </li>
+                        <li >
+                            <label class="d-flex justify-content-between">
+                                <div class="name">
+                                    <img src="images/abdelaz.jfif" alt="asia">
+                                    <span>جامعةالملك عبدالعزيز</span>
+                                </div>
+                                <input type="checkbox"> 
+                            </label>
+                        </li>
+                        <div class="allLinks">
+                            <a href="#"> كل الجامعات</a>
+                        </div>
+                        </ul>
+                    </div>
+    
+                    <div class="dropdown d-flex align-items-baseline">
+                        
+                        <button class="btn btn-default dropdown-toggle" type="button" 
+                                id="dropdownMenu1" data-toggle="dropdown" 
+                                aria-haspopup="true" aria-expanded="true">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>الكلية</span>
+                                <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu checkbox-menu allow-focus" aria-labelledby="dropdownMenu1">
+                            <div class="search">
+                                <input type="text" class="form-control" id="myInput"aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="ابحث عن اسم الجامعة ....">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        <li >
+                            <label class="d-flex justify-content-between">
+                                <div class="name">
+                                    <img src="images/amal.jfif" alt="asia">
+                                    <span>شعبة اداراة الاعمال</span>
+                                </div>
+                                <input type="checkbox"> 
+                            </label>
+                        </li>
+                        <li >
+                            <label class="d-flex justify-content-between">
+                                <div class="name">
+                                    <img src="images/teb.jfif" alt="asia">
+                                    <span>شعبة الطب</span>
+                                </div>
+                                <input type="checkbox"> 
+                            </label>
+                        </li>
+                        <li >
+                            <label class="d-flex justify-content-between">
+                                <div class="name">
+                                    <img src="images/eng.jfif" alt="asia">
+                                    <span>شعبة الهندسة</span>
+                                </div>
+                                <input type="checkbox"> 
+                            </label>
+                        </li>
+                        <li >
+                            <label class="d-flex justify-content-between">
+                                <div class="name">
+                                    <img src="images/saildela.jfif" alt="asia">
+                                    <span>شعبة الصيدلة</span>
+                                </div>
+                                <input type="checkbox"> 
+                            </label>
+                        </li>
+                        <li >
+                            <label class="d-flex justify-content-between">
+                                <div class="name">
+                                    <img src="images/olom.jfif" alt="asia">
+                                    <span>شعبة العلوم</span>
+                                </div>
+                                <input type="checkbox"> 
+                            </label>
+                        </li>
+                        <div class="allLinks">
+                            <a href="#"> كل الشعب</a>
+                        </div>
+                        </ul>
+                    </div>
+    
+                    <div class="searchSpecial">
+                        <button>بحث</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end filter dropdown -->
+        <!-- start universty sybjects -->
+        <section id="subjects" >
+            <div class="main-container ">
+                <h2 class="browse">تصفح كل المواد  <span>بكافة التخصصات</span></h2>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <a href="kingFisal.html" style="text-decoration: none;">
+                            <div class="subject aqua d-flex justify-content-start align-items-center" >
+                                <span class="image">
+                                        <img src="images/arrow.png" alt="اعمال">
+                                    </span>
+                                <div class="content">
+                                    <p class="up">شعبة ادارة الاعمال(300)</p>
+                                    <p>
+                                        <img src="images/book.png" alt="">
+                                        <span>مادة دراسية(5400)</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <a href="kingFisal.html" style="text-decoration: none;">
+                            <div class="subject brown d-flex justify-content-start align-items-center">
+                                <span class="image">
+                                        <img src="images/samama.png" alt="اعمال">
+                                    </span>
+                                <div class="content">
+                                    <p class="up">شعبة الطب(300)</p>
+                                    <p>
+                                        <img src="images/book.png" alt="">
+                                        <span>مادة دراسية(5400)</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4">
+
+                        <a href="kingFisal.html" style="text-decoration: none;">
+                            <div class="subject  d-flex justify-content-start align-items-center">
+                                <span class="image">
+                                        <img src="images/calc.png" alt="اعمال">
+                                    </span>
+                                <div class="content">
+                                    <p class="up">شعبة الهندسة(300)</p>
+                                    <p>
+                                        <img src="images/book.png" alt="">
+                                        <span>مادة دراسية(5400)</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4">
+
+                        <a href="kingFisal.html" style="text-decoration: none;">
+                            <div class="subject brown d-flex justify-content-start align-items-center">
+                                <span class="image">
+                                        <img src="images/arrow.png" alt="اعمال">
+                                    </span>
+                                <div class="content">
+                                    <p class="up">شعبة ادارة الاعمال(300)</p>
+                                    <p>
+                                        <img src="images/book.png" alt="">
+                                        <span>مادة دراسية(5400)</span>
+                                    </p>
+                                </div>
+                        </div>
+                    </a>
+
+                    </div>
+
+                    <div class="col-lg-4">
+
+                        <a href="kingFisal.html" style="text-decoration: none;">
+                            <div class="subject aqua d-flex justify-content-start align-items-center">
+                                <span class="image">
+                                        <img src="images/samama.png" alt="اعمال">
+                                    </span>
+                                <div class="content">
+                                    <p class="up">شعبة الطب(300)</p>
+                                    <p>
+                                        <img src="images/book.png" alt="">
+                                        <span>مادة دراسية(5400)</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="col-lg-4">
+
+                        <a href="kingFisal.html" style="text-decoration: none;">
+                            <div class="subject brown d-flex justify-content-start align-items-center">
+                                <span class="image">
+                                        <img src="images/calc.png" alt="اعمال">
+                                    </span>
+                                <div class="content">
+                                    <p class="up">شعبة الهندسة(300)</p>
+                                    <p>
+                                        <img src="images/book.png" alt="">
+                                        <span>مادة دراسية(5400)</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4">
+
+                        <a href="kingFisal.html" style="text-decoration: none;">
+                            <div class="subject aqua d-flex justify-content-start align-items-center">
+                                <span class="image">
+                                        <img src="images/arrow.png" alt="اعمال">
+                                    </span>
+                                <div class="content">
+                                    <p class="up">شعبة ادارة الاعمال(300)</p>
+                                    <p>
+                                        <img src="images/book.png" alt="">
+                                        <span>مادة دراسية(5400)</span>
+                                    </p>
+                                </div>
+                            </div></a>
+
+                    </div>
+
+                    <div class="col-lg-4">
+
+                        <a href="kingFisal.html" style="text-decoration: none;">
+                            <div class="subject brown d-flex justify-content-start align-items-center">
+                                <span class="image">
+                                        <img src="images/calc.png" alt="اعمال">
+                                    </span>
+                                <div class="content">
+                                    <p class="up">شعبة الطب(300)</p>
+                                    <p>
+                                        <img src="images/book.png" alt="">
+                                        <span>مادة دراسية(5400)</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="col-lg-4">
+
+                        <a href="kingFisal.html" style="text-decoration: none;">
+                            <div class="subject  d-flex justify-content-start align-items-center">
+                                <span class="image">
+                                        <img src="images/samama.png" alt="اعمال">
+                                    </span>
+                                <div class="content">
+                                    <p class="up">شعبة الهندسة(300)</p>
+                                    <p>
+                                        <img src="images/book.png" alt="">
+                                        <span>مادة دراسية(5400)</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <hr>
+                    <a href="universties.html" class="more">
+                        <img src="images/sr.png" alt="">
+                        المزيد
+                    </a>
+                </div>
+            </div>
+            <img src="images/Group 32021.png" class="bg1">
+            <img src="images/Group 32021.png" class="bg2">
+        </section>
+
+        <!-- end universty sybjects -->
+
+        <!-- start how we work -->
+        <section id="hoWork">
+            <img src="images/graph line.png" alt="bg" class="backGround">
+            <div class="main-container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="work">
+                            <h3 class="h3">كيف <span>نعمل</span></h3>
+                            <p>الان يمكن تحميل كافة مواد الجامعات الاخرى</p>
+                        </div>
+
+                        <div class="cards">
+                            <div class="row">
+
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="card d-flex justify-content-start align-items-center flex-row">
+                                        <span>1</span>
+                                        <img src="images/t 32080.jpg" alt="">
+                                        <p>اولا قم بانشاء حساب</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="card d-flex justify-content-start align-items-center flex-row">
+                                        <span>2</span>
+                                        <img src="images/d32080.png" alt="">
+                                        <p>قم بالبحث عن اسم الجامعة</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="card d-flex justify-content-start align-items-center flex-row">
+                                        <span>3</span>
+                                        <img src="images/d32080.png" alt="">
+                                        <p>قم باختيار الكلية</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="card d-flex justify-content-start align-items-center flex-row">
+                                        <span>4</span>
+                                        <img src="images/r 32080.jpg" alt="">
+                                        <p>قم بتحميل المواد الدرسية</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="personalImg">
+                            <div class="image">
+                                
+                                <div class="setOfSpanes">
+                                    <span class="hoverCircle"></span>
+                                    <span class="imageCircle"></span>
+                                    
+                                </div>
+                                <img src="images/person.png" alt="personal image">
+                            </div>
+
+                            <span class="univer d-flex justify-content-start align-items-center">
+                                <img src="images/r 32080.jpg" alt="">
+                                <div class="content">
+                                    <p class="num">+500</p>
+                                    <p class="text">جامعة مشتركة</p>
+                                </div>
+                            </span>
+
+                            <span class="univer right d-flex justify-content-start align-items-center">
+                                <img src="images/t 32080.jpg" alt="">
+                                <div class="content">
+                                    <p class="num">+500</p>
+                                    <p class="text">طالب مشترك</p>
+                                </div>
+                            </span>
+
+                            <span class="univer left d-flex justify-content-start align-items-center">
+                                <img src="images/d32080.png" alt="">
+                                <div class="content">
+                                    <p class="num">+500</p>
+                                    <p class="text">مادة دراسية</p>
+                                </div>
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end how we work -->
+
+        <!-- start some of our universties -->
+        <section id="unives">
+            <div class="main-container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="work">
+                            <h3 class="h3">بعض الجامعات المسجلة <span>لدينا</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- start single universty -->
+                    <div class="col-lg-4">
+                        
+                            <div class="univ">
+                                <div class="location">
+                                    <img src="images/green.png" alt="">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>الاحساء</span>
+
+                                </div>
+                                <div class="bgi"><img src="images/Mask Group 52.png" alt="saud">
+                                </div>
+                                <div class="univBox">
+                                    <span class="logo">
+                                            <img src="images/NoPath - Copy (7).png" alt="">
+                                        </span>
+                                    <h3 class="text-center">جامعة الملك فيصل</h3>
+                                    <div class="line"><img src="images/Group 7839.png" alt="line"></div>
+                                    <div class="content d-flex justify-content-between align-items-baseline">
+                                        <div class="right d-flex align-items-center justify-content-start">
+                                            <img src="images/d32080.png" alt="">
+                                            <p class="mt-3"> <span>(20)</span> شعبة</p>
+                                        </div>
+                                        <div class="right d-flex align-items-center justify-content-start">
+                                            <img src="images/r 32080.jpg" alt="">
+                                            <p class="mt-3"> <span>(200)</span> مادة دراسية</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                        </div>
+                        <!-- end single universty -->
+                    </div>
+                    <!-- end single universty -->
+
+                    <div class="col-lg-4">
+                        
+                            <div class="univ">
+                                <div class="location">
+                                    <img src="images/blue.png" alt="">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>جدة</span>
+
+                                </div>
+                                <div class="bgi"><img src="images/abdelaziz.jpg" alt="saud">
+                                </div>
+                                <div class="univBox">
+                                    <span class="logo">
+                                            <img src="images/ablogo.jpg" alt="">
+                                        </span>
+                                    <h3 class="text-center">جامعة الملك عبدالعزيز</h3>
+                                    <div class="line"><img src="images/Group 7839.png" alt="line"></div>
+                                    <div class="content d-flex justify-content-between align-items-baseline">
+                                        <div class="right d-flex align-items-center justify-content-start">
+                                            <img src="images/d32080.png" alt="">
+                                            <p class="mt-3"> <span>(20)</span> شعبة</p>
+                                        </div>
+                                        <div class="right d-flex align-items-center justify-content-start">
+                                            <img src="images/r 32080.jpg" alt="">
+                                            <p class="mt-3"> <span>(200)</span> مادة دراسية</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        
+                            <div class="univ">
+                                <div class="location">
+                                    <img src="images/orange.png" alt="">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>الرياض</span>
+
+                                </div>
+                                <div class="bgi"><img src="images/soad.jpg" alt="saud">
+                                </div>
+                                <div class="univBox">
+                                    <span class="logo">
+                                            <img src="images/soadlogo.jpg" alt="">
+                                        </span>
+                                    <h3 class="text-center">جامعة الملك سعود</h3>
+                                    <div class="line"><img src="images/Group 7839.png" alt="line"></div>
+                                    <div class="content d-flex justify-content-between align-items-baseline">
+                                        <div class="right d-flex align-items-center justify-content-start">
+                                            <img src="images/d32080.png" alt="">
+                                            <p class="mt-3"> <span>(20)</span> شعبة</p>
+                                        </div>
+                                        <div class="right d-flex align-items-center justify-content-start">
+                                            <img src="images/r 32080.jpg" alt="">
+                                            <p class="mt-3"> <span>(200)</span> مادة دراسية</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    
+                </div>
+
+
+                <div class="row">
+                    <!-- start single universty -->
+                    <div class="col-lg-4">
+                        
+                            <div class="univ">
+                                <div class="location">
+                                    <img src="images/green.png" alt="">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>ابها</span>
+
+                                </div>
+                                <div class="bgi"><img src="images/Mask Group 52.png" alt="saud">
+                                </div>
+                                <div class="univBox">
+                                    <span class="logo">
+                                            <img src="images/NoPath - Copy (7).png" alt="">
+                                        </span>
+                                    <h3 class="text-center">جامعة الملك فيصل</h3>
+                                    <div class="line"><img src="images/Group 7839.png" alt="line"></div>
+                                    <div class="content d-flex justify-content-between align-items-baseline">
+                                        <div class="right d-flex align-items-center justify-content-start">
+                                            <img src="images/d32080.png" alt="">
+                                            <p class="mt-3"> <span>(20)</span> شعبة</p>
+                                        </div>
+                                        <div class="right d-flex align-items-center justify-content-start">
+                                            <img src="images/r 32080.jpg" alt="">
+                                            <p class="mt-3"> <span>(200)</span> مادة دراسية</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        
+                    </div>
+                    <!-- end single universty -->
+
+                    <div class="col-lg-4">
+                
+                            <div class="univ">
+                                <div class="location">
+                                    <img src="images/green.png" alt="">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>الاحساء</span>
+
+                                </div>
+                                <div class="bgi"><img src="images/abdelaziz.jpg" alt="saud">
+                                </div>
+                                <div class="univBox">
+                                    <span class="logo">
+                                            <img src="images/ablogo.jpg" alt="">
+                                        </span>
+                                    <h3 class="text-center">جامعة الملك عبدالعزيز</h3>
+                                    <div class="line"><img src="images/Group 7839.png" alt="line"></div>
+                                    <div class="content d-flex justify-content-between align-items-baseline">
+                                        <div class="right d-flex align-items-center justify-content-start">
+                                            <img src="images/d32080.png" alt="">
+                                            <p class="mt-3"> <span>(20)</span> شعبة</p>
+                                        </div>
+                                        <div class="right d-flex align-items-center justify-content-start">
+                                            <img src="images/r 32080.jpg" alt="">
+                                            <p class="mt-3"> <span>(200)</span> مادة دراسية</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </div>
+
+                    <div class="col-lg-4">
+                        
+                            <div class="univ">
+                                <div class="location">
+                                    <img src="images/blue.png" alt="">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>جدة</span>
+
+                                </div>
+                                <div class="bgi"><img src="images/soad.jpg" alt="saud">
+                                </div>
+                                <div class="univBox">
+                                    <span class="logo">
+                                            <img src="images/soadlogo.jpg" alt="">
+                                        </span>
+                                    <h3 class="text-center">جامعة الملك سعود</h3>
+                                    <div class="line"><img src="images/Group 7839.png" alt="line"></div>
+                                    <div class="content d-flex justify-content-between align-items-baseline">
+                                        <div class="right d-flex align-items-center justify-content-start">
+                                            <img src="images/d32080.png" alt="">
+                                            <p class="mt-3"> <span>(20)</span> شعبة</p>
+                                        </div>
+                                        <div class="right d-flex align-items-center justify-content-start">
+                                            <img src="images/r 32080.jpg" alt="">
+                                            <p class="mt-3"> <span>(200)</span> مادة دراسية</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+
+                <div class="allUines">
+                    <a href="universties.html">
+                        <img src="images/sr.png" alt=""> تصفح كافة الجامعات لدينا
+                    </a>
+                </div>
+    </div>
+        </section>
+        <!--end some of our universitys  -->
+
+
+        <!-- start opinions -->
+        <section id="opinions">
+            <img src="images/Path 9782.jpg" alt="" class="bg">
+            <div class="work">
+                <h3 class="h3 text-center">اراء بعض <span>الطلاب</span></h3>
+            </div>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="item">
+
+                            <span class="Quote top">
+                                <i class="fas fa-quote-right"></i>
+                            </span>
+
+                            <div class="images d-flex justify-content-center">
+                                <img src="images/abdelaziz.jpg" alt="" class="right">
+                                <img src="images/abdelaziz.jpg" alt="">
+                                <img src="images/abdelaziz.jpg" alt="" class="left">
+                            </div>
+                            <div class="content">
+                                <p class="name text-center">Ahmed Samer</p>
+                                <p class="text text-center">
+                                    هذ النص هو مثال لنص يمكن ان يوضع خلاله هذ النص هو مثال لنص يمكن ان يوضع خلاله هذ النص هو مثال لنص يمكن ان يوضع خلاله هذ النص هو مثال لنص يمكن ان يوضع خلاله
+                                </p>
+                            </div>
+                            <span class="Quote bottom">
+                                <i class="fas fa-quote-left"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+
+                            <span class="Quote top">
+                            <i class="fas fa-quote-right"></i>
+                        </span>
+
+                        <div class="images d-flex justify-content-center">
+                            <img src="images/abdelaziz.jpg" alt="" class="right">
+                            <img src="images/abdelaziz.jpg" alt="">
+                            <img src="images/abdelaziz.jpg" alt="" class="left">
+                        </div>
+                            <div class="content">
+                                <p class="name text-center">Ahmed Samer</p>
+                                <p class="text text-center">
+                                    هذ النص هو مثال لنص يمكن ان يوضع خلاله هذ النص هو مثال لنص يمكن ان يوضع خلاله هذ النص هو مثال لنص يمكن ان يوضع خلاله هذ النص هو مثال لنص يمكن ان يوضع خلاله
+                                </p>
+                            </div>
+                            <span class="Quote bottom">
+                            <i class="fas fa-quote-left"></i>
+                        </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+
+                            <div class="images d-flex justify-content-center">
+                                <img src="images/abdelaziz.jpg" alt="" class="right">
+                                <img src="images/abdelaziz.jpg" alt="">
+                                <img src="images/abdelaziz.jpg" alt="" class="left">
+                            </div>
+                            <div class="content">
+                                <span class="Quote top">
+                                <i class="fas fa-quote-right"></i>
+                            </span>
+                                <p class="name text-center">Ahmed Samer</p>
+                                <p class="text text-center">
+                                    هذ النص هو مثال لنص يمكن ان يوضع خلاله هذ النص هو مثال لنص يمكن ان يوضع خلاله هذ النص هو مثال لنص يمكن ان يوضع خلاله هذ النص هو مثال لنص يمكن ان يوضع خلاله
+                                </p>
+                                <span class="Quote bottom">
+                                <i class="fas fa-quote-left"></i>
+                            </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!-- end opinions -->
+
+        <!--start important universties -->
+        <section id="opinions" class="pt-5">
+            <div class="main-container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="work">
+                            <h3 class="h3 text-center mb-3">اهم الجامعات المسجلة <span>لدينا</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper my-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- single slider -->
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <img src="images/nagran.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                    <img src="images/hael.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <img src="images/ablogo.jpg" alt="">
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <img src="images/ablogo.jpg" alt="">
+                            </div>
+                            
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <img src="images/ablogo.jpg" alt="">
+                            </div>
+                            
+                        </div>
+                    
+                    </div>
+                    <div class="swiper-pagination"></div>
+        
+                    </div>
+        </section>
+        <!--start important universties -->
+        
+
+        <!-- start footer -->
+        <section class="footer d-flex justify-content-around align-items-baseline">
+            <div class="overlay">
+                <img src="images/Mask Group 56.png" alt="footerBg">
+            </div>
+            <div class="main-container">
+
+                <div class="footerSocialIcons d-flex justify-content-center align-items-baseline">
+                    <hr class="right">
+                    <a href="#">
+                        <span class="youtube"><i class="fab fa-youtube"></i></span>
+                    </a>
+                    <a href="#">
+                        <span><i class="fab fa-instagram"></i></span>
+                    </a>
+                    <a href="#">
+                        <span><i class="fab fa-twitter"></i></span>
+                    </a>
+                    <a href="#">
+                        <span class="facebook"><i class="fab fa-facebook-f"></i></span>
+                    </a>
+                    <hr class="left">
+                </div>
+
+                <div class="row pt-5">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="logo">
+                            <a href="#"><img src="images/Group 31846.png" alt="" class="logoImage"></a>
+                            <p> هذا النص هو مثال لنص يمكن ان يوضع مكانه هذا النص هو مثال لنص يمكن ان يوضع مكانه هذا النص هو مثال لنص يمكن ان يوضع مكانه هذا النص هو مثال لنص يمكن ان يوضع مكانه</p>
+                        </div>
+                    </div>    
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="bestUnivers">
+                                <h3 class="main">اهم الجامعات لدينا</h3>
+                                <ul>
+                                    <li><a href="#"> 
+                                        <i class="far fa-window-minimize"></i>
+                                        جامعة الملك فيصل
+                                    </a></li>
+                                    <li><a href="#"> 
+                                        <i class="far fa-window-minimize"></i>
+                                        جامعة الملك عبدالعزيز
+                                    </a></li>
+                                    <li><a href="#">
+                                        <i class="far fa-window-minimize"></i>
+                                        جامعة الملك سعود
+                                    </a></li>
+                                    <li><a href="#">
+                                        <i class="far fa-window-minimize"></i>
+                                        جامعة الملك خالد
+                                    </a></li>
+                                    <li><a href="#">
+                                        <i class="far fa-window-minimize"></i>
+                                        جامعة  حائل
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="WhoAreWe">
+                                <h3 class="main">من نحن</h3>
+                                <ul>
+                                    <li><a href="pricacyPolitcs.html"> 
+                                        <i class="far fa-window-minimize"></i>
+                                        سياسة الخصوصية
+                                    </a></li>
+                                    <li><a href="commonQuestions.html"> 
+                                        <i class="far fa-window-minimize"></i>
+                                        الاسئلة الشائعة
+                                    </a></li>
+                                    <li><a href="lodinStudent.html">
+                                        <i class="far fa-window-minimize"></i>
+                                        تسجيل طالب
+                                    </a></li>
+                                    <li><a href="loginProf.html">
+                                        <i class="far fa-window-minimize"></i>
+                                        تسجيل دكتور
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="callUs">
+                                <h3 class="main">اتصل بنا</h3>
+                                <ul>
+                                    <li><a href="#"> 
+                                        <i class="fas fa-phone-square-alt"></i>
+                                        01091194250
+                                    </a></li>
+                                    <li><a href="#"> 
+                                        <i class="fas fa-envelope"></i>
+                                        example@gmail.com
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="copyRight">
+            <p>جميع الحقوق محفوظة لدى Exchange Knowledement</p>
+        </div>
+        <!-- end footer -->
+    
+    <script>
+        $('.carousel').carousel({
+            
+        })
+
+        $('.carousel').carousel({
+        })
+
+
+        // dropdown search filter
+        
+        $(document).ready(function(){
+            $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $(".dropdown-menu li").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+    });
+    </script>
+
+
+<!-- Initialize Swiper -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<script>
+    var swiper = new Swiper(".swiper", {
+        spaceBetween: 30,
+        speed: 1200,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+            stopOnLast:true,
+        }
+    });
+</script>
+<script>
+    var swiper = new Swiper(".my-swiper", {
+        slidesPerView: 5,
+        spaceBetween: 20,
+        speed:1500,
+        loop:false,
+        centeredSlides: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+            stopOnLast: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+
+            1024:{
+                slidesPerView:5
+            },
+            880:{
+                slidesPerView:4
+            },
+            720 : {
+                slidesPerView:3
+            },
+            400 : {slidesPerView:2},
+            320 :{slidesPerView:1,}
+            
+        },
+        
+    });
+</script>
+
+
+    <script src='js/all.min.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

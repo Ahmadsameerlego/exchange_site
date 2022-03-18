@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style-ltr.css"> -->
+    <title>المواد</title>
+</head>
+<body>
+    <!-- start landing page -->
+    <section  id="stickyNav">
+    <div class="main-container">
+        <!-- start navbar -->
+            <div class="landingPage h-auto">
+                
+                <nav class="row navbarLinksnavbar navbar-expand-sm pt-4 d-flex align-items-baseline">
+                    <ul class="navbar-nav col-md-7 d-flex justify-content-between">
+
+                        <div class="toggleIcon" style="position: absolute;
+                        left: 55px;
+                        top: 15px;">
+                            <i class="fas fa-times" onclick="remNav()" ></i>
+                        </div>
+
+                        <li class="nav-item"><a href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a href="universties.html">الجامعات</a></li>
+                        <li class="nav-item"><a href="RegesMyBooks.html" class="active">المواد</a></li>
+                        <li class="nav-item"><a href="callUs.html">اتصل بنا</a></li>
+
+                        
+
+                        <div class="userDropdown" style="background-color: transparent;">
+                            <div class="dropdown d-flex align-items-baseline">
+                        
+                                <button class="btn btn-default dropdown-toggle" type="button" 
+                                        id="dropdownMenu1" data-toggle="dropdown" 
+                                        aria-haspopup="true" aria-expanded="true">
+                                        <i class="fas fa-chevron-down"></i>
+                                        <span>Ahmed Samer</span>
+                                        <img src="images/Ellipse_3516-removebg-preview.png" alt="" class="user">
+                                </button>
+                                <ul class="dropdown-menu checkbox-menu allow-focus" style="transform: translate(0);" aria-labelledby="dropdownMenu1">
+                                    <li>
+                                        <a href="#" class="d-flex justify-content-start">
+                                            <img src="images/t 32080.jpg" alt="">
+                                            <p>المعلومات الشخصية</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex justify-content-start">
+                                            <img src="images/d32080.png" alt="">
+                                            <p>المعلومات الجامعية</p>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a href="#" class="d-flex justify-content-start">
+                                            <img src="images/r 32080.jpg" alt="">
+                                            <p>المواد المحفوظة</p>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a href="#" class="d-flex justify-content-start">
+                                            <img src="images/r 32080.jpg" alt="">
+                                            <p>طلبات الشراء</p>
+                                        </a>
+                                    </li>
+                                    <div class="logoutlink d-flex align-items-center justify-content-center" style="padding-left: 40%;">
+                                        <a href="#"> تسجيل الخروج</a>
+                                        <i class="fas fa-sign-out-alt"></i>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+    
+                    
+    
+                    <div class="userActions col-md-5 d-flex justify-content-around align-items-baseline">
+                        <div class="addClass">
+                            <i class="fas fa-bars" onclick="addNav()"></i>
+                        </div>
+                        <div class="alert">
+                            <a href="alert.html"><i class="fas fa-bell"></i></a>
+                            <span>0</span>
+                        </div>
+                        <div class="shCar">
+                            <a href="chart2.html"><i class="fas fa-shopping-cart"></i></a>
+                            <span>0</span>
+                        </div>
+    
+                        <div class="lang">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                    <span>EN</span>
+                                    <i class="fas fa-globe"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">العربية</a></li>
+                                    <li><a href="#">الانجليزية</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="logo">
+                            <a href="#"><img src="images/Group 31846.png" alt="" class="logoImage"></a>
+                        </div>
+                    </div>
+                </nav>
+    </section>
+    <!-- end navbar -->
+
+    <!-- start content -->
+    <div class="main-container">
+        <div class="bookContent">
+            <div class="filterPdf d-flex justify-content-start align-items-baseline">
+                <div class="arrange">
+                    <p>الترتيب من خلال</p>
+                </div>
+
+                <div class="userDropdown userAll">
+                    <div class="dropdown d-flex align-items-baseline">
+                        <button class="btn btn-default dropdown-toggle" type="button" 
+                                id="dropdownMenu1" data-toggle="dropdown" 
+                                aria-haspopup="true" aria-expanded="true">
+                                <i class="fas fa-chevron-down"></i>
+                                <span>الكل</span>
+                        </button>
+
+                        <ul class="dropdown-menu checkbox-menu allow-focus filterSubjects" aria-labelledby="dropdownMenu1" style="height: fit-content;">
+                            
+                            <li>
+                                <label class="d-flex justify-content-between">
+                                    <div class="name">
+                                        <span>الكل</span>
+                                    </div>
+                                    <label class="Container">
+                                        <input type="checkbox" checked="checked">
+                                        <i class="checkmark checkUni"></i>
+                                    </label>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="d-flex justify-content-between">
+                                    <div class="name">
+                                        <span>الجامعة</span>
+                                    </div>
+                                    <label class="Container">
+                                        <input type="checkbox" checked="checked">
+                                        <i class="checkmark checkUni"></i>
+                                    </label>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="d-flex justify-content-between">
+                                    <div class="name">
+                                        <span>الكلية</span>
+                                    </div>
+                                    <label class="Container">
+                                        <input type="checkbox" checked="checked">
+                                        <i class="checkmark checkUni"></i>
+                                    </label> 
+                                </label>
+                            </li>
+                            <li>
+                                <label class="d-flex justify-content-between">
+                                    <div class="name">
+                                        <span>الفرقة</span>
+                                    </div>
+                                    <label class="Container">
+                                        <input type="checkbox" checked="checked">
+                                        <i class="checkmark checkUni"></i>
+                                    </label>
+                                </label>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- start all of university subjects -->
+            <section id="uniSubs">
+
+                <div class="row">
+
+                    <!-- start single pdf -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="subItem">
+                            <div class="pdfImage">
+                                <img src="images//Group 7859.png" alt="subject Image">
+                            </div>
+                            <h3 class="subType">تسويق</h3>
+                            <p>جامعة الملك فيصل، شعبة إدارة الأعمال، الفرقه الثانيه</p>
+                        </div>
+                        
+                    </div>
+                    <!-- start single pdf -->
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="subItem">
+                            <div class="pdfImage">
+                                <img src="images//Group 7859.png" alt="subject Image">
+                            </div>
+                            <h3 class="subType">اقتصاد</h3>
+                            <p>جامعة الملك فيصل، شعبة إدارة الأعمال، الفرقه الثانيه</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="subItem">
+                            <div class="pdfImage">
+                                <img src="images//Group 7859.png" alt="subject Image">
+                            </div>
+                            <h3 class="subType">محاسبة</h3>
+                            <p>جامعة الملك فيصل، شعبة إدارة الأعمال، الفرقه الثانيه</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                <div class="row">
+
+                    <!-- start single pdf -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="subItem">
+                            <div class="pdfImage">
+                                <img src="images//Group 7859.png" alt="subject Image">
+                            </div>
+                            <h3 class="subType">تسويق</h3>
+                            <p>جامعة الملك فيصل، شعبة إدارة الأعمال، الفرقه الثانيه</p>
+                        </div>
+                        
+                    </div>
+                    <!-- start single pdf -->
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="subItem">
+                            <div class="pdfImage">
+                                <img src="images//Group 7859.png" alt="subject Image">
+                            </div>
+                            <h3 class="subType">اقتصاد</h3>
+                            <p>جامعة الملك فيصل، شعبة إدارة الأعمال، الفرقه الثانيه</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="subItem">
+                            <div class="pdfImage">
+                                <img src="images//Group 7859.png" alt="subject Image">
+                            </div>
+                            <h3 class="subType">ادارة اعمال</h3>
+                            <p>جامعة الملك فيصل، شعبة إدارة الأعمال، الفرقه الثانيه</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                <div class="row">
+
+                    <!-- start single pdf -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="subItem">
+                            <div class="pdfImage">
+                                <img src="images//Group 7859.png" alt="subject Image">
+                            </div>
+                            <h3 class="subType">تسويق</h3>
+                            <p>جامعة الملك فيصل، شعبة إدارة الأعمال، الفرقه الثانيه</p>
+                        </div>
+                        
+                    </div>
+                    <!-- start single pdf -->
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="subItem">
+                            <div class="pdfImage">
+                                <img src="images//Group 7859.png" alt="subject Image">
+                            </div>
+                            <h3 class="subType">تجارة</h3>
+                            <p>جامعة الملك فيصل، شعبة إدارة الأعمال، الفرقه الثانيه</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="subItem">
+                            <div class="pdfImage">
+                                <img src="images//Group 7859.png" alt="subject Image">
+                            </div>
+                            <h3 class="subType">تحليل كمي</h3>
+                            <p>جامعة الملك فيصل، شعبة إدارة الأعمال، الفرقه الثانيه</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <!-- start single pdf -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="subItem">
+                            <div class="pdfImage">
+                                <img src="images//Group 7859.png" alt="subject Image">
+                            </div>
+                            <h3 class="subType">تسويق</h3>
+                            <p>جامعة الملك فيصل، شعبة إدارة الأعمال، الفرقه الثانيه</p>
+                        </div>
+                        
+                    </div>
+                    <!-- start single pdf -->
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="subItem">
+                            <div class="pdfImage">
+                                <img src="images//Group 7859.png" alt="subject Image">
+                            </div>
+                            <h3 class="subType">اقتصاد</h3>
+                            <p>جامعة الملك فيصل، شعبة إدارة الأعمال، الفرقه الثانيه</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="subItem">
+                            <div class="pdfImage">
+                                <img src="images//Group 7859.png" alt="subject Image">
+                            </div>
+                            <h3 class="subType">ادراة</h3>
+                            <p>جامعة الملك فيصل، شعبة إدارة الأعمال، الفرقه الثانيه</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <!-- end all of university subjects -->
+
+            <!-- start pagination -->
+            <div class="pagination">
+                <a href="#" class="pText"> التالي &raquo; </a>
+                <a href="#" class="num">1</a>
+                <a class="active num" href="#">2</a>
+                <a href="#" class="num">3</a>
+                <a href="#" class="num">4</a>
+                <a href="#" class="num">5</a>
+                <a href="#" class="num">6</a>
+                <a href="#" class="pText">&laquo; السابق</a>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+
+            <!-- start footer -->
+            <section class="footer d-flex justify-content-around align-items-baseline">
+                <div class="overlay">
+                    <img src="images/Mask Group 56.png" alt="footerBg">
+                </div>
+                <div class="main-container">
+    
+                    <div class="footerSocialIcons d-flex justify-content-center align-items-baseline">
+                        <hr class="right">
+                        <a href="#">
+                            <span class="youtube"><i class="fab fa-youtube"></i></span>
+                        </a>
+                        <a href="#">
+                            <span><i class="fab fa-instagram"></i></span>
+                        </a>
+                        <a href="#">
+                            <span><i class="fab fa-twitter"></i></span>
+                        </a>
+                        <a href="#">
+                            <span class="facebook"><i class="fab fa-facebook-f"></i></span>
+                        </a>
+                        <hr class="left">
+                    </div>
+    
+                    <div class="row pt-5">
+    
+                        <div class="col-lg-3 col-md-6">
+                            <div class="logo">
+                                <a href="#"><img src="images/Group 31846.png" alt="" class="logoImage"></a>
+                                <p> هذا النص هو مثال لنص يمكن ان يوضع مكانه هذا النص هو مثال لنص يمكن ان يوضع مكانه هذا النص هو مثال لنص يمكن ان يوضع مكانه هذا النص هو مثال لنص يمكن ان يوضع مكانه</p>
+                            </div>
+                        </div>    
+    
+                            <div class="col-lg-3 col-md-6">
+                                <div class="bestUnivers">
+                                    <h3 class="main">اهم الجامعات لدينا</h3>
+                                    <ul>
+                                        <li><a href="#"> 
+                                            <i class="far fa-window-minimize"></i>
+                                            جامعة الملك فيصل
+                                        </a></li>
+                                        <li><a href="#"> 
+                                            <i class="far fa-window-minimize"></i>
+                                            جامعة الملك عبدالعزيز
+                                        </a></li>
+                                        <li><a href="#">
+                                            <i class="far fa-window-minimize"></i>
+                                            جامعة الملك سعود
+                                        </a></li>
+                                        <li><a href="#">
+                                            <i class="far fa-window-minimize"></i>
+                                            جامعة الملك خالد
+                                        </a></li>
+                                        <li><a href="#">
+                                            <i class="far fa-window-minimize"></i>
+                                            جامعة  حائل
+                                        </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                            <div class="col-lg-3 col-md-6">
+                                <div class="WhoAreWe">
+                                    <h3 class="main">من نحن</h3>
+                                    <ul>
+                                        <li><a href="#"> 
+                                            <i class="far fa-window-minimize"></i>
+                                            سياسة الخصوصية
+                                        </a></li>
+                                        <li><a href="#"> 
+                                            <i class="far fa-window-minimize"></i>
+                                            الاسئلة الشائعة
+                                        </a></li>
+                                        <li><a href="#">
+                                            <i class="far fa-window-minimize"></i>
+                                            تسجيل طالب
+                                        </a></li>
+                                        <li><a href="#">
+                                            <i class="far fa-window-minimize"></i>
+                                            تسجيل دكتور
+                                        </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                            <div class="col-lg-3 col-md-6">
+                                <div class="callUs">
+                                    <h3 class="main">اتصل بنا</h3>
+                                    <ul>
+                                        <li><a href="#"> 
+                                            <i class="fas fa-phone-square-alt"></i>
+                                            01091194250
+                                        </a></li>
+                                        <li><a href="#"> 
+                                            <i class="fas fa-envelope"></i>
+                                            example@gmail.com
+                                        </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <div class="copyRight">
+                <p>جميع الحقوق محفوظة لدى Exchange Knowledement</p>
+            </div>
+            <!-- end footer -->
+    </div>
+    <script>
+
+        // must be internal script
+        $('.checkbox-menu').on('click',function(event){
+            event.stopPropagation();
+        })
+
+    </script>
+    <script src='js/all.min.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

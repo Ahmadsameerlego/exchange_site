@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style-ltr.css"> -->
+    <title>نبذه عن الجامعة</title>
+</head>
+<body>
+    <!-- start land page -->
+    <div>
+        <!-- start navbar -->
+        <div class="main-container">
+            <nav class="row navbarLinksnavbar navbar-expand-sm pt-4 d-flex align-items-baseline">
+                <ul class="navbar-nav col-md-7 d-flex justify-content-between">
+        
+                    <div class="toggleIcon" style="position: absolute;
+                        left: 55px;
+                        top: 15px;">
+                        <i class="fas fa-times" onclick="remNav()"></i>
+                    </div>
+        
+                    <li class="nav-item"><a href="index.html">الرئيسية</a></li>
+                    <li class="nav-item"><a href="universties.html">الجامعات</a></li>
+                    <li class="nav-item"><a href="myBooks.html">المواد</a></li>
+                    <li class="nav-item"><a href="callUs.html">اتصل بنا</a></li>
+        
+        
+        
+                    <div class="loginLink">
+                        <a href="login.html" class="d-flex justify-content-start">
+                            <i class="fas fa-user-alt"></i>
+                            <span>تسجيل الدخول</span>
+                        </a>
+                    </div>
+                </ul>
+        
+        
+        
+                <div class="userActions col-md-5 d-flex justify-content-around align-items-baseline">
+                    <div class="addClass">
+                        <i class="fas fa-bars" onclick="addNav()"></i>
+                    </div>
+                    <div class="alert">
+                        <a href="alert.html"><i class="fas fa-bell"></i></a>
+                        <span>0</span>
+                    </div>
+                    <div class="shCar">
+        
+                        <a href="chart1.html"><i class="fas fa-shopping-cart"></i></a>
+                        <span>0</span>
+                    </div>
+        
+                    <div class="lang">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                    <span>EN</span>
+                                    <i class="fas fa-globe"></i>
+                                </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">العربية</a></li>
+                                <li><a href="#">الانجليزية</a></li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="logo">
+                        <a href="index.html"><img src="images/Group 31846.png" alt="" class="logoImage"></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- end navbar -->
+    
+        <!-- start carousal => made with bootstrap v.4 -->
+        <div class="carousl uniCarousl" style="height:69vh">
+            <div class="row">
+    
+                <div id="carousel-example-generic" class=" summaryCarousal carousel slide carousel-fade carousel-animate carousel-bg" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox" style="position: relative;">
+                        <!-- start single carousal item -->
+                        <div class="item active" style="background-image:linear-gradient(#000000c2,#000000c7), url(images/Mask\ Group\ 47.png);">
+                            <!-- محتويات كل slider -->
+                            <div class="carousel-caption summaryCaption">
+                                <div class="row">
+                                    <div class="lanPaContent zoomInDown animated col-lg-12 mt-5">
+                
+                                        <div class="tittle fadeInLeft animated" >
+                                            <span class="top-right"></span>
+                                            <span class="bottom-right"></span>
+                                            <h3 class="uniName"> جامعة الملك فيصل </h3>
+                                            <span class="top-left"></span>
+                                            <span class="bottom-left"></span>
+                                        </div>
+                
+                                        <div class="headerContent rotateInDownRight animated d-flex justify-content-center">
+                                            <div class="headerItem d-flex flex-column">
+                                                <img src="images/d32080.png" alt="">
+                                                <p>(20) كلية</p>
+                                            </div>
+                                            <div class="headerItem d-flex flex-column">
+                                                <img src="images/d32080.png" alt="">
+                                                <p>(200) قسم</p>
+                                            </div>
+                                            <div class="headerItem d-flex flex-column">
+                                                <img src="images/d32080.png" alt="">
+                                                <p>(600) مادة</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end single carousal item -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end carousal => made with bootstrap v.4 -->
+    </div>
+    <!-- end land page -->
+
+    <!-- statrt summary section -->
+    <section id="summary">
+        <p class="sumaryP">نبذه عن الجامعة</p>
+        <p class="sumaryCo">
+            تم إنشاء جامعة الملك فيصل في المنطقة الشرقية من المملكة العربية السعودية بموجب المرسوم الملكي رقم هـ/67 وتاريخ 28 / 7/ 1395هـ (1975م)، ويقع المقر الرئيسي للجامعة حسب نظامها الأساسي في مدينة الهفوف في الأحساء، ولها فرع في الدمام، وقد بدأت الجامعة مسيرتها العلمية بأربع كليات: كليتان منها في مدينة الهفوف بالأحساء، وهما: كلية العلوم الزراعية والأغذية، وكلية الطب البيطري، وكليتان في الدمام وهما: كلية الطب والعلوم الطبية، وكلية العمارة والتخطيط. 
+            وكانت نقطة الانطلاق بإنشاء كلية العلوم الزراعية والأغذية، وكلية الطب البيطري والثروة الحيوانية. حيث كانت أعداد منسوبي الجامعة آنذاك (170) طالبًا و(46) من أعضاء الهيئة التدريسية، وخرَّجت الجامعة في دفعتها الأولى 9 من الطلاب السعوديين.
+        </p>
+    </section>
+    <!-- end summary section -->
+
+    <!-- start colleges in university -->
+    <section id="unives" style="padding: 0;">
+        <div class="main-container">
+            
+            <div class="row">
+                <!-- start single universty -->
+                <div class="col-lg-4">
+                    <a href="kingFisal.html" class="text-decoration-none">
+                        <div class="univ">
+                            
+                            <div class="bgi"><img src="images/Mask Group 52.png" alt="saud">
+                            </div>
+                            <div class="univBox spBox sumarBox">
+                                <h3 class="text-center sHeader">شعبة ادراة الاعمال</h3>
+                            </div>
+                                <div class="content bottomBox d-flex justify-content-between align-items-baseline">
+                                    <div class="right d-flex align-items-center justify-content-start">
+                                        <img src="images/d32080.png" alt="">
+                                        <p class="mt-3 "> (20) شعبة</p>
+                                    </div>
+                                    <div class="right d-flex align-items-center justify-content-start">
+                                        <img src="images/r 32080.jpg" alt="">
+                                        <p class="mt-3  ">(200) مادة دراسية</p>
+                                    </div>
+                                </div>
+                            </div>    
+                        </a>
+                </div>
+                <!-- end single universty -->
+
+                <div class="col-lg-4">
+                    <a href="kingFisal.html"  class="text-decoration-none">
+                        <div class="univ">
+                            
+                            <div class="bgi"><img src="images/abdelaziz.jpg" alt="saud">
+                            </div>
+                            <div class="univBox spBox sumarBox">
+                                <h3 class="text-center sHeader">شعبة الطب</h3>
+                                
+                            </div>
+                            <div class="content bottomBox d-flex justify-content-between align-items-baseline">
+                                <div class="right d-flex align-items-center justify-content-start">
+                                    <img src="images/d32080.png" alt="">
+                                    <p class="mt-3  "> (20) شعبة</p>
+                                </div>
+                                <div class="right d-flex align-items-center justify-content-start">
+                                    <img src="images/r 32080.jpg" alt="">
+                                    <p class="mt-3  ">(200)مادة دراسية</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4">
+                    <a href="kingFisal.html" class="text-decoration-none">
+                        <div class="univ">
+                            
+                            <div class="bgi"><img src="images/soad.jpg" alt="saud">
+                            </div>
+                            <div class="univBox spBox sumarBox">
+                                <h3 class="text-center sHeader">شعبة ادارة الاعمال</h3>
+
+                            </div>
+                            <div class="content bottomBox d-flex justify-content-between align-items-baseline">
+                                <div class="right d-flex align-items-center justify-content-start">
+                                    <img src="images/d32080.png" alt="">
+                                    <p class="mt-3  "> (20)شعبة</p>
+                                </div>
+                                <div class="right d-flex align-items-center justify-content-start">
+                                    <img src="images/r 32080.jpg" alt="">
+                                    <p class="mt-3  "> (200) مادة دراسية</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <!-- start single universty -->
+                <div class="col-lg-4">
+                    <a href="kingFisal.html" class="text-decoration-none">
+                        <div class="univ">
+                            
+                            <div class="bgi"><img src="images/Mask Group 52.png" alt="saud">
+                            </div>
+                            <div class="univBox spBox sumarBox">
+                                
+                                <h3 class="text-center sHeader">شعبة ادارة الاعمال</h3>
+                                
+                            </div>
+                            <div class="content bottomBox d-flex justify-content-between align-items-baseline">
+                                <div class="right d-flex align-items-center justify-content-start">
+                                    <img src="images/d32080.png" alt="">
+                                    <p class="mt-3  "> <span>(20)</span> شعبة</p>
+                                </div>
+                                <div class="right d-flex align-items-center justify-content-start">
+                                    <img src="images/r 32080.jpg" alt="">
+                                    <p class="mt-3  "> <span>(200)</span> مادة دراسية</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end single universty -->
+                <div class="col-lg-4">
+                    <a href="kingFisal.html" class="text-decoration-none">
+                        <div class="univ">
+                            
+                            <div class="bgi"><img src="images/abdelaziz.jpg" alt="saud">
+                            </div>
+                            <div class="univBox spBox sumarBox">
+                                
+                                <h3 class="text-center sHeader">شعبة الهندسة</h3>
+                                
+                            </div>
+                            <div class="content bottomBox d-flex justify-content-between align-items-baseline">
+                                <div class="right d-flex align-items-center justify-content-start">
+                                    <img src="images/d32080.png" alt="">
+                                    <p class="mt-3  "> (20)شعبة</p>
+                                </div>
+                                <div class="right d-flex align-items-center justify-content-start">
+                                    <img src="images/r 32080.jpg" alt="">
+                                    <p class="mt-3  ">(200) مادة دراسية</p>
+                                </div>
+                            </div>
+                            </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4">
+                    <a href="kingFisal.html" class="text-decoration-none">
+                        <div class="univ">
+                            
+                            <div class="bgi"><img src="images/soad.jpg" alt="saud">
+                            </div>
+                            <div class="univBox spBox sumarBox">
+                                <h3 class="text-center sHeader">شعبة الطب</h3>
+                                
+                            </div>
+                            <div class="content bottomBox d-flex justify-content-between align-items-baseline">
+                                <div class="right d-flex align-items-center justify-content-start">
+                                    <img src="images/d32080.png" alt="">
+                                    <p class="mt-3  "> (20) شعبة</p>
+                                </div>
+                                <div class="right d-flex align-items-center justify-content-start">
+                                    <img src="images/r 32080.jpg" alt="">
+                                    <p class="mt-3  "> (200) مادة دراسية</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+        </div>
+    </section>
+    <!-- edn colleges in university -->
+
+    
+    <!-- start footer -->
+    <section class="footer d-flex justify-content-around align-items-baseline">
+        <div class="overlay">
+            <img src="images/Mask Group 56.png" alt="footerBg">
+        </div>
+        <div class="main-container">
+
+            <div class="footerSocialIcons d-flex justify-content-center align-items-baseline">
+                <hr class="right">
+                <a href="#">
+                    <span class="youtube"><i class="fab fa-youtube"></i></span>
+                </a>
+                <a href="#">
+                    <span><i class="fab fa-instagram"></i></span>
+                </a>
+                <a href="#">
+                    <span><i class="fab fa-twitter"></i></span>
+                </a>
+                <a href="#">
+                    <span class="facebook"><i class="fab fa-facebook-f"></i></span>
+                </a>
+                <hr class="left">
+            </div>
+
+            <div class="row pt-5">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="logo">
+                        <a href="#"><img src="images/Group 31846.png" alt="" class="logoImage"></a>
+                        <p> هذا النص هو مثال لنص يمكن ان يوضع مكانه هذا النص هو مثال لنص يمكن ان يوضع مكانه هذا النص هو مثال لنص يمكن ان يوضع مكانه هذا النص هو مثال لنص يمكن ان يوضع مكانه</p>
+                    </div>
+                </div>    
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="bestUnivers">
+                            <h3 class="main">اهم الجامعات لدينا</h3>
+                            <ul>
+                                <li><a href="#"> 
+                                    <i class="far fa-window-minimize"></i>
+                                    جامعة الملك فيصل
+                                </a></li>
+                                <li><a href="#"> 
+                                    <i class="far fa-window-minimize"></i>
+                                    جامعة الملك عبدالعزيز
+                                </a></li>
+                                <li><a href="#">
+                                    <i class="far fa-window-minimize"></i>
+                                    جامعة الملك سعود
+                                </a></li>
+                                <li><a href="#">
+                                    <i class="far fa-window-minimize"></i>
+                                    جامعة الملك خالد
+                                </a></li>
+                                <li><a href="#">
+                                    <i class="far fa-window-minimize"></i>
+                                    جامعة  حائل
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="WhoAreWe">
+                            <h3 class="main">من نحن</h3>
+                            <ul>
+                                <li><a href="#"> 
+                                    <i class="far fa-window-minimize"></i>
+                                    سياسة الخصوصية
+                                </a></li>
+                                <li><a href="#"> 
+                                    <i class="far fa-window-minimize"></i>
+                                    الاسئلة الشائعة
+                                </a></li>
+                                <li><a href="#">
+                                    <i class="far fa-window-minimize"></i>
+                                    تسجيل طالب
+                                </a></li>
+                                <li><a href="#">
+                                    <i class="far fa-window-minimize"></i>
+                                    تسجيل دكتور
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="callUs">
+                            <h3 class="main">اتصل بنا</h3>
+                            <ul>
+                                <li><a href="#"> 
+                                    <i class="fas fa-phone-square-alt"></i>
+                                    01091194250
+                                </a></li>
+                                <li><a href="#"> 
+                                    <i class="fas fa-envelope"></i>
+                                    example@gmail.com
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    </div>
+    <div class="copyRight">
+        <p>جميع الحقوق محفوظة لدى Exchange Knowledement</p>
+    </div>
+    <!-- end footer -->
+    <!-- back to top button -->
+    <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+        <button class="btn btn-primary" title="Back to Top">
+            <i class="fa fa-angle-double-up"></i>
+        </button>
+    </div>
+    <script src='js/all.min.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

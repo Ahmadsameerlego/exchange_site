@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style-ltr.css"> -->
+    <title>المعلومات الشخصية</title>
+</head>
+<body>
+        <!-- start navbar -->
+        <section  id="stickyNav">
+            <div class="main-container">
+                <!-- start navbar -->
+                    <div class="landingPage h-auto">
+                        
+                        <nav class="row navbarLinksnavbar navbar-expand-sm pt-4 d-flex align-items-baseline">
+                            <ul class="navbar-nav col-md-7 d-flex justify-content-between">
+        
+                                <div class="toggleIcon" style="position: absolute;
+                                left: 55px;
+                                top: 15px;">
+                                    <i class="fas fa-times" onclick="remNav()" ></i>
+                                </div>
+        
+                                <li class="nav-item"><a href="rejesteredPage.html">الرئيسية</a></li>
+                                <li class="nav-item"><a href="universties.html">الجامعات</a></li>
+                                <li class="nav-item"><a href="RegesMyBooks.html">المواد</a></li>
+                                <li class="nav-item"><a href="callUs.html">اتصل بنا</a></li>
+        
+                                <!-- userdropdonw -->
+                                <div class="userDropdown" style="background-color: transparent;">
+                                    <div class="dropdown d-flex align-items-baseline">
+                                
+                                        <button class="btn btn-default dropdown-toggle" type="button" 
+                                                id="dropdownMenu1" data-toggle="dropdown" 
+                                                aria-haspopup="true" aria-expanded="true">
+                                                <i class="fas fa-chevron-down"></i>
+                                                <span>Ahmed Samer</span>
+                                                <img src="images/Ellipse_3516-removebg-preview.png" alt="" class="user">
+                                        </button>
+                                        <ul class="dropdown-menu checkbox-menu allow-focus" style="transform: translate(0);" aria-labelledby="dropdownMenu1">
+                                            <li>
+                                                <a href="#" class="d-flex justify-content-start" data-value="#home-tab">
+                                                    <img src="images/t 32080.jpg" alt="">
+                                                    <p>المعلومات الشخصية</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="d-flex justify-content-start" data-value="#profile-tab">
+                                                    <img src="images/d32080.png" alt="">
+                                                    <p>المعلومات الجامعية</p>
+                                                </a>
+                                            </li>
+                                            <li >
+                                                <a href="#" class="d-flex justify-content-start" data-value="#contact-tab">
+                                                    <img src="images/r 32080.jpg" alt="">
+                                                    <p>المواد المحفوظة</p>
+                                                </a>
+                                            </li>
+                                            <li >
+                                                <a href="#" class="d-flex justify-content-start" data-value="#buys-tab">
+                                                    <img src="images/r 32080.jpg" alt="">
+                                                    <p>طلبات الشراء</p>
+                                                </a>
+                                            </li>
+                                            <div class="logoutlink d-flex align-items-center justify-content-center" style="padding-left: 40%;">
+                                                <a href="#"> تسجيل الخروج</a>
+                                                <i class="fas fa-sign-out-alt"></i>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </ul>
+
+                            <div class="userActions col-md-5 d-flex justify-content-around align-items-baseline">
+                                <div class="addClass">
+                                    <i class="fas fa-bars" onclick="addNav()"></i>
+                                </div>
+                                <div class="alert">
+                                    <a href="alert.html"><i class="fas fa-bell"></i></a>
+                                    <span>0</span>
+                                </div>
+                                <div class="shCar">
+                                    <a href="chart2.html"><i class="fas fa-shopping-cart"></i></a>
+                                    <span>0</span>
+                                </div>
+            
+                                <div class="lang">
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                            <span>EN</span>
+                                            <i class="fas fa-globe"></i>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">العربية</a></li>
+                                            <li><a href="#">الانجليزية</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+            
+                                <div class="logo">
+                                    <a href="#"><img src="images/Group 31846.png" alt="" class="logoImage"></a>
+                                </div>
+                            </div>
+                        </nav>
+        </section>
+        <!-- end navbar -->
+
+        <!-- image under navbar -->
+        <div class="underNav">
+            <img src="images/Mask Group 47.png" alt="">
+        </div>
+        <!-- end under navbar -->
+
+        <!-- start content of all tabs -->
+        <div class="d-flex wholePersonal">
+            <!--start user image -->
+            <div class="fisalLogo imagePerson d-flex flex-column">
+                <img src="images/personal.jfif" id="frame" class="personalI">
+                <span style="margin:auto" class="Edit"><i class="fas fa-edit"></i></span>
+                <input type="file" class="accessImage" onchange="preview()">
+                <p class="text-center"><span><i class="far fa-user"></i></span> احمد سمير </p>
+            </div>
+            <!--end user image -->
+            <section id="yearsTabs" class="personalTabs">
+                    <!-- start header tabs -->
+                    <ul class="nav nav-tabs pNav" id="myTab" role="tablist">
+                    
+                        <li class="nav-item fifth" role="presentation">
+                            <button class="nav-link cTab active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">المعلومات الشخصية</button>
+                        </li>
+                        <li class="nav-item fifth" role="presentation">
+                            <button class="nav-link cTab toggleTab" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">المعلومات الجامعية</button>
+                        </li>
+                        <li class="nav-item fifth" role="presentation">
+                            <button class="nav-link cTab " id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">الموادالمحفوظة</button>
+                        </li>
+                        <li class="nav-item fifth" role="presentation">
+                            <button class="nav-link cTab " id="buys-tab" data-bs-toggle="tab" data-bs-target="#buys" type="button" role="tab" aria-controls="buys" aria-selected="false">طلبات الشراء</button>
+                        </li>
+                    </ul>
+                    <!-- end header tabs -->
+    
+    
+                    <!-- start tabs content -->
+                    <div class="tab-content personalTab" id="myTabContent">
+                        <!-- بداية المعلومات الشخصية -->
+                        <div class="tab-pane fade active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <form action="">
+                                <div class="d-flex">
+                                    <div class="pUser threeIn d-flex">
+                                        <div class="pInput">
+                                            <label for="fistname">الاسم الاول</label>
+                                            <input type="text" name="" id="firstname" value="محمد">
+                                        </div>
+                                        <div class="pInput">
+                                            <label for="secondName">الاسم الاب</label>
+                                            <input type="text" name="" id="secondName" value="محمد">
+                                        </div>
+                                        <div class="pInput">
+                                            <label for="lastName">الاسم العائلة</label>
+                                            <input type="text" name="" id="lastName" value="محمد">
+                                        </div>
+                                    </div>
+                                    <div class="edit">
+                                        <button class="editInfo" type="button">تعديل</button>
+                                    </div>
+                                </div>
+    
+                                <div class="d-flex">
+                                    <div class="pUser">
+                                        <label for="phone">رقم الجوال</label>
+                                        <input type="tel" name="" id="phone" value="01013746111">
+                                    </div>
+                                    <div class="edit">
+                                        <button class="editInfo" type="button">تعديل</button>
+                                    </div>
+                                </div>
+    
+                                <div class="d-flex">
+                                    <div class="pUser">
+                                        <label for="mail">البريد الالكتروني</label>
+                                        <input type="email" name="" id="mail" value="dde@gmail.com">
+                                    </div>
+                                    <div class="edit">
+                                        <button class="editInfo" type="button">تعديل</button>
+                                    </div>
+                                </div>
+    
+                                <div class="d-flex">
+                                    <div class="pUser">
+                                        <label for="unimail">بريد الطالب الجامعي</label>
+                                        <input type="email" name="" id="unimail" value="dde@gmail.com">
+                                    </div>
+                                    <div class="edit">
+                                        <button class="editInfo" type="button">تعديل</button>
+                                    </div>
+                                </div>
+    
+                                <div class="d-flex">
+                                    <div class="pUser">
+                                        <label for="country">الدولة</label>
+                                        <input type="text" name="" id="country" value="السعودية">
+                                    </div>
+                                    <div class="edit">
+                                        <button class="editInfo" type="button">تعديل</button>
+                                    </div>
+                                </div>
+    
+                                <div class="d-flex">
+                                    <div class="pUser">
+                                        <label for="city">المدينة</label>
+                                        <input type="text" name="" id="city" value="الرياض">
+                                    </div>
+                                    <div class="edit">
+                                        <button class="editInfo" type="button">تعديل</button>
+                                    </div>
+                                </div>
+    
+                                <div class="d-flex">
+                                    <div class="pUser threeIn d-flex">
+                                        <div class="pInput">
+                                            <label for="tittle1">العنوان1</label>
+                                            <input type="number" name="" id="tittle1" value="12">
+                                        </div>
+                                        <div class="pInput" style="margin-top: 20px;">
+                                            <input type="text" name="" value="انس ابن مالك">
+                                        </div>
+                                        <div class="pInput"  style="margin-top: 20px;">
+                                            <input type="number" name="" value="3243434">
+                                        </div>
+                                    </div>
+                                    <div class="edit">
+                                        <button class="editInfo" type="button">تعديل</button>
+                                    </div>
+                                </div>
+    
+                                <div class="d-flex">
+                                    <div class="pUser threeIn d-flex">
+                                        <div class="pInput">
+                                            <label for="tittle2">العنوان2</label>
+                                            <input type="number" name="" id="tittle2" value="12">
+                                        </div>
+                                        <div class="pInput" style="margin-top: 20px;">
+                                            <input type="text" name="" value="انس ابن مالك">
+                                        </div>
+                                        <div class="pInput"  style="margin-top: 20px;">
+                                            <input type="number" name="" value="3243434">
+                                        </div>
+                                    </div>
+                                    <div class="edit">
+                                        <button class="editInfo" type="button">تعديل</button>
+                                    </div>
+                                </div>
+    
+                                <div class="d-flex">
+                                    <div class="pUser">
+                                        <label for="password">الرقم السري</label>
+                                        <input type="password" name="" id="password" value="ootruxkc">
+                                    </div>
+                                    <div class="edit">
+                                        <button class="editInfo" type="button">تعديل</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- نهاية المعلومات الشخصية -->
+    
+                        <!-- بداية المعلومات الجامعية -->
+                        <div class="tab-pane tabCont fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <form action="">
+                                
+                                <div class="d-flex">
+                                    <div class="pUser">
+                                        <label for="univer">الجامعة</label>
+                                        <input type="text" name="" id="univer" value="جامعة الملك عبدالعزيز">
+                                    </div>
+                                    <div class="edit">
+                                        <button class="editInfo" type="button">تعديل</button>
+                                    </div>
+                                </div>
+    
+                                <div class="d-flex">
+                                    <div class="pUser">
+                                        <label for="college">الكلية</label>
+                                        <input type="text" name="" id="college" value="الهندسة">
+                                    </div>
+                                    <div class="edit">
+                                        <button class="editInfo" type="button">تعديل</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="d-flex">
+                                    <div class="pUser">
+                                        <label for="part">القسم</label>
+                                        <input type="text" name="" id="part" value="الهندسة الميدانية">
+                                    </div>
+                                    <div class="edit">
+                                        <button class="editInfo" type="button">تعديل</button>
+                                    </div>
+                                </div>
+    
+                                <div class="d-flex">
+                                    <div class="pUser">
+                                        <label for="level">الدرجة العلمية</label>
+                                        <input type="text" name="" id="level" value="بكالريوس">
+                                    </div>
+                                    <div class="edit">
+                                        <button class="editInfo" type="button">تعديل</button>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex">
+                                    <div class="pUser">
+                                        <div class="preview">
+
+                                            <div class="d-flex justify-content-start">
+                                                <p style="width:26%">ارفاق صورة شخصية</p>
+                                            </div>
+                                            
+                                            <div class="d-flex flex-wrap parent-img">
+                                                <div class="drop-box mr-2 ml-2">
+                                                    <div class="text-center m-2 box-up w-100">
+                                                        <div class="images-upload-block">
+                                                            <label class="upload-img">
+                                                                <span><img src="images/Group 22979.png" alt="" style="width: 15%;"></span>
+                                                                <input type="file" accept="image/*" class="form-control image-uploader" name="imageArr" required="">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                    <div class="edit" style="margin-top: 57px !important;">
+                                        <button class="editInfo" type="button">تعديل</button>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        </div>
+                        <!-- نهاية المعلومات الجامعية -->
+    
+                        <!-- بداية المواد المحفوظة -->
+                        <div class="tab-pane tabCont fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            <section id="uniSubs">
+                                <div class="row">
+                                    <!-- start single pdf -->
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="subItem">
+                                            <span class="price">35 رس</span>
+                                            <span class="star"><i class="fas fa-star" style="color:#EBB92F"></i></span>
+                                            <div class="pdfImage">
+                                                <img src="images//Group 7859.png" alt="subject Image">
+                                            </div>
+                                            <h3 class="subType">تسويق</h3>
+                                            <p>جامعة الملك فيصل , كلية ادراة الاعمال , بكالريوس</p>
+                                        </div>
+
+                                        <div class="shownButtons">
+                                            <button class="addToBuy addChart">اضف للشراء</button>
+                                            <button class="plans addChart"><i class="fas fa-arrow-down"></i>الخطة الدراسية</i></button>
+                                        </div>
+                                        <p> هذ النص هو مثال لنص يمكن ان يستبدل مكانه هذ النص هو مثال لنص يمكن ان يستبدل مكانه</p>
+                                    </div>
+                                    <!-- end single pdf -->
+                
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="subItem">
+                                            <span class="price">35 رس</span>
+                                            <span class="star"><i class="fas fa-star" style="color:#EBB92F"></i></span>
+                                            <div class="pdfImage">
+                                                <img src="images//Group 7859.png" alt="subject Image">
+                                            </div>
+                                            <h3 class="subType">اقتصاد</h3>
+                                            <p>جامعة الملك فيصل , كلية ادراة الاعمال , بكالريوس</p>
+                                        </div>
+                                        <div class="shownButtons">
+                                            <button class="addToBuy addChart">اضف للشراء</button>
+                                            <button class="plans addChart"><i class="fas fa-arrow-down"></i>الخطة الدراسية</i></button>
+                                        </div>
+                                        <p> هذ النص هو مثال لنص يمكن ان يستبدل مكانه هذ النص هو مثال لنص يمكن ان يستبدل مكانه</p>
+                                    </div>
+                
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="subItem">
+                                            <span class="price">35 رس</span>
+                                            <span class="star"><i class="fas fa-star" style="color:#EBB92F"></i></span>
+                                            <div class="pdfImage">
+                                                <img src="images//Group 7859.png" alt="subject Image">
+                                            </div>
+                                            <h3 class="subType">محاسبة</h3>
+                                            <p>جامعة الملك فيصل , كلية ادراة الاعمال , بكالريوس</p>
+                                        </div>
+
+                                        <div class="shownButtons">
+                                            <button class="addToBuy addChart">اضف للشراء</button>
+                                            <button class="plans addChart"><i class="fas fa-arrow-down"></i>الخطة الدراسية</i></button>
+                                        </div>
+                                        <p> هذ النص هو مثال لنص يمكن ان يستبدل مكانه هذ النص هو مثال لنص يمكن ان يستبدل مكانه</p>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                
+                                    <!-- start single pdf -->
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="subItem">
+                                            <span class="price">35 رس</span>
+                                            <span class="star"><i class="fas fa-star" style="color:#EBB92F"></i></span>
+                                            <div class="pdfImage">
+                                                <img src="images//Group 7859.png" alt="subject Image">
+                                            </div>
+                                            <h3 class="subType">تسويق</h3>
+                                            <p>جامعة الملك فيصل , كلية ادراة الاعمال , بكالريوس</p>
+                                        </div>
+                                        
+                                        <div class="shownButtons">
+                                            <button class="addToBuy addChart">اضف للشراء</button>
+                                            <button class="plans addChart"><i class="fas fa-arrow-down"></i>الخطة الدراسية</i></button>
+                                        </div>
+                                        <p> هذ النص هو مثال لنص يمكن ان يستبدل مكانه هذ النص هو مثال لنص يمكن ان يستبدل مكانه</p>
+                                    </div>
+                                    <!-- end single pdf -->
+                
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="subItem">
+                                            <span class="price">35 رس</span>
+                                            <span class="star"><i class="fas fa-star" style="color:#EBB92F"></i></span>
+                                            <div class="pdfImage">
+                                                <img src="images//Group 7859.png" alt="subject Image">
+                                            </div>
+                                            <h3 class="subType">اقتصاد</h3>
+                                            <p>جامعة الملك فيصل , كلية ادراة الاعمال , بكالريوس</p>
+                                        </div>
+                                        
+                                        <div class="shownButtons">
+                                            <button class="addToBuy addChart">اضف للشراء</button>
+                                            <button class="plans addChart"><i class="fas fa-arrow-down"></i>الخطة الدراسية</i></button>
+                                        </div>
+                                        <p> هذ النص هو مثال لنص يمكن ان يستبدل مكانه هذ النص هو مثال لنص يمكن ان يستبدل مكانه</p>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="subItem">
+                                            <span class="price">35 رس</span>
+                                            <span class="star"><i class="fas fa-star" style="color:#EBB92F"></i></span>
+                                            <div class="pdfImage">
+                                                <img src="images//Group 7859.png" alt="subject Image">
+                                            </div>
+                                            <h3 class="subType">اقتصاد</h3>
+                                            <p>جامعة الملك فيصل , كلية ادراة الاعمال , بكالريوس</p>
+                                        </div>
+                                        
+                                        <div class="shownButtons">
+                                            <button class="addToBuy addChart">اضف للشراء</button>
+                                            <button class="plans addChart"><i class="fas fa-arrow-down"></i>الخطة الدراسية</i></button>
+                                        </div>
+                                        <p> هذ النص هو مثال لنص يمكن ان يستبدل مكانه هذ النص هو مثال لنص يمكن ان يستبدل مكانه</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <!-- نهاية المواد المحفوظة -->
+    
+                        <!-- بداية طلبات الشراء -->
+                        <div class="tab-pane tabCont fade" id="buys" role="tabpanel" aria-labelledby="buys-tab">
+                            <!-- موافقة الادارة والجامعة -->
+                            <ul class="nav nav-tabs second-tab buysTab">
+    
+                                <li class="active">
+                                    <a data-toggle="tab" href="#manres" class="d-flex flex-column text-center" >
+                                        <p class="semstar">في انتظار الادرارة</p>
+                                    </a>
+                                </li>
+    
+                                <li>
+                                    <a data-toggle="tab" href="#unires" class="d-flex flex-column text-center">
+                                        <p class="semstar">في انتظار الجامعة</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a data-toggle="tab" href="#completed" class="d-flex flex-column text-center">
+                                        <p class="semstar">تامة</p>
+                                    </a>
+                                </li>
+                            </ul>
+    
+                        <div class="tab-content" style="box-shadow:none;">
+                            <!-- content of the first tab -->
+                            <!-- بداية في انتظار الادراة -->
+                            <div id="manres" class="tab-pane fade active"  style="box-shadow:none;">
+                                <div class="studentsInfo mt-4">
+                                    <div class="row">
+                                        <!-- start single order -->
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="item d-flex justify-content-start align-items-center">
+                                                <a href="buysDetails.html"><span class="buys">المشتريات <i class="fas fa-chevron-left"></i></span></a>
+                                                <div class="idImage">
+                                                    <img src="images/fisal.png" alt="">
+                                                </div>
+            
+                                                <div class="d-flex flex-column">
+                                                    <p class="d-flex flex-row align-items-center orderNum"> رقم الطلب <span>123</span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <img src="images/Group 32270.png" alt="" class="mony"> <span>2332 ريال سعودي </span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <i class="fas fa-calendar-alt"></i> <span>16/3/2021</span> </p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single order -->
+
+                                        <!-- start single order -->
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="item d-flex justify-content-start align-items-center">
+                                                <a href="buysDetails.html"><span class="buys">المشتريات <i class="fas fa-chevron-left"></i></span></a>
+                                                <div class="idImage">
+                                                    <img src="images/fisal.png" alt="">
+                                                </div>
+            
+                                                <div class="d-flex flex-column">
+                                                    <p class="d-flex flex-row align-items-center orderNum"> رقم الطلب <span>123</span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <img src="images/Group 32270.png" alt="" class="mony"> <span>2332 ريال سعودي </span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <i class="fas fa-calendar-alt"></i> <span>16/3/2021</span> </p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single order -->
+                                    </div>
+            
+                                    <div class="row">
+                                        <!-- start single order -->
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="item d-flex justify-content-start align-items-center">
+                                                <a href="buysDetails.html"><span class="buys">المشتريات <i class="fas fa-chevron-left"></i></span></a>
+                                                <div class="idImage">
+                                                    <img src="images/fisal.png" alt="">
+                                                </div>
+            
+                                                <div class="d-flex flex-column">
+                                                    <p class="d-flex flex-row align-items-center orderNum"> رقم الطلب <span>123</span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <img src="images/Group 32270.png" alt="" class="mony"> <span>2332 ريال سعودي </span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <i class="fas fa-calendar-alt"></i> <span>16/3/2021</span> </p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single order -->
+            
+                                        <!-- start single order -->
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="item d-flex justify-content-start align-items-center">
+                                                <a href="buysDetails.html"><span class="buys">المشتريات <i class="fas fa-chevron-left"></i></span></a>
+                                                <div class="idImage">
+                                                    <img src="images/fisal.png" alt="">
+                                                </div>
+            
+                                                <div class="d-flex flex-column">
+                                                    <p class="d-flex flex-row align-items-center orderNum"> رقم الطلب <span>123</span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <img src="images/Group 32270.png" alt="" class="mony"> <span>2332 ريال سعودي </span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <i class="fas fa-calendar-alt"></i> <span>16/3/2021</span> </p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single order -->
+                                    </div>
+            
+                                    <div class="row">
+                                        <!-- start single order -->
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="item d-flex justify-content-start align-items-center">
+                                                <a href="buysDetails.html"><span class="buys">المشتريات <i class="fas fa-chevron-left"></i></span></a>
+                                                <div class="idImage">
+                                                    <img src="images/fisal.png" alt="">
+                                                </div>
+            
+                                                <div class="d-flex flex-column">
+                                                    <p class="d-flex flex-row align-items-center orderNum"> رقم الطلب <span>123</span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <img src="images/Group 32270.png" alt="" class="mony"> <span>2332 ريال سعودي </span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <i class="fas fa-calendar-alt"></i> <span>16/3/2021</span> </p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single order -->
+            
+                                        <!-- start single order -->
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="item d-flex justify-content-start align-items-center">
+                                                <a href="buysDetails.html"><span class="buys">المشتريات <i class="fas fa-chevron-left"></i></span></a>
+                                                <div class="idImage">
+                                                    <img src="images/fisal.png" alt="">
+                                                </div>
+            
+                                                <div class="d-flex flex-column">
+                                                    <p class="d-flex flex-row align-items-center orderNum"> رقم الطلب <span>123</span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <img src="images/Group 32270.png" alt="" class="mony"> <span>2332 ريال سعودي </span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <i class="fas fa-calendar-alt"></i> <span>16/3/2021</span> </p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single order -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- نهابة في انتظار الادراة -->
+                            <!-- بداية في انتظار الجامعة -->
+                            <div id="unires" class="tab-pane fade">
+                                <div class="studentsInfo mt-4">
+                                    <div class="row">
+                                        <!-- start single order -->
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="item d-flex justify-content-start align-items-center">
+                                                <a href="buysDetails2.html"><span class="buys">المشتريات <i class="fas fa-chevron-left"></i></span></a>
+                                                <div class="idImage">
+                                                    <img src="images/fisal.png" alt="">
+                                                </div>
+            
+                                                <div class="d-flex flex-column">
+                                                    <p class="d-flex flex-row align-items-center orderNum"> رقم الطلب <span>123</span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <img src="images/Group 32270.png" alt="" class="mony"> <span>2332 ريال سعودي </span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <i class="fas fa-calendar-alt"></i> <span>16/3/2021</span> </p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single order -->
+
+                                        <!-- start single order -->
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="item d-flex justify-content-start align-items-center">
+                                                <a href="buysDetails2.html"><span class="buys">المشتريات <i class="fas fa-chevron-left"></i></span></a>
+                                                <div class="idImage">
+                                                    <img src="images/fisal.png" alt="">
+                                                </div>
+            
+                                                <div class="d-flex flex-column">
+                                                    <p class="d-flex flex-row align-items-center orderNum"> رقم الطلب <span>123</span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <img src="images/Group 32270.png" alt="" class="mony"> <span>2332 ريال سعودي </span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <i class="fas fa-calendar-alt"></i> <span>16/3/2021</span> </p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single order -->
+                                    </div>
+            
+                                    <div class="row">
+                                        <!-- start single order -->
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="item d-flex justify-content-start align-items-center">
+                                                <a href="buysDetails2.html"><span class="buys">المشتريات <i class="fas fa-chevron-left"></i></span></a>
+                                                <div class="idImage">
+                                                    <img src="images/fisal.png" alt="">
+                                                </div>
+            
+                                                <div class="d-flex flex-column">
+                                                    <p class="d-flex flex-row align-items-center orderNum"> رقم الطلب <span>123</span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <img src="images/Group 32270.png" alt="" class="mony"> <span>2332 ريال سعودي </span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <i class="fas fa-calendar-alt"></i> <span>16/3/2021</span> </p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single order -->
+            
+                                        <!-- start single order -->
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="item d-flex justify-content-start align-items-center">
+                                                <a href="buysDetails2.html"><span class="buys">المشتريات <i class="fas fa-chevron-left"></i></span></a>
+                                                <div class="idImage">
+                                                    <img src="images/fisal.png" alt="">
+                                                </div>
+            
+                                                <div class="d-flex flex-column">
+                                                    <p class="d-flex flex-row align-items-center orderNum"> رقم الطلب <span>123</span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <img src="images/Group 32270.png" alt="" class="mony"> <span>2332 ريال سعودي </span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <i class="fas fa-calendar-alt"></i> <span>16/3/2021</span> </p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single order -->
+                                    </div>
+            
+                                    <div class="row">
+                                        <!-- start single order -->
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="item d-flex justify-content-start align-items-center">
+                                                <a href="buysDetails2.html"><span class="buys">المشتريات <i class="fas fa-chevron-left"></i></span></a>
+                                                <div class="idImage">
+                                                    <img src="images/fisal.png" alt="">
+                                                </div>
+            
+                                                <div class="d-flex flex-column">
+                                                    <p class="d-flex flex-row align-items-center orderNum"> رقم الطلب <span>123</span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <img src="images/Group 32270.png" alt="" class="mony"> <span>2332 ريال سعودي </span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <i class="fas fa-calendar-alt"></i> <span>16/3/2021</span> </p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single order -->
+            
+                                        <!-- start single order -->
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="item d-flex justify-content-start align-items-center">
+                                                <a href="buysDetails2.html"><span class="buys">المشتريات <i class="fas fa-chevron-left"></i></span></a>
+                                                <div class="idImage">
+                                                    <img src="images/fisal.png" alt="">
+                                                </div>
+            
+                                                <div class="d-flex flex-column">
+                                                    <p class="d-flex flex-row align-items-center orderNum"> رقم الطلب <span>123</span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <img src="images/Group 32270.png" alt="" class="mony"> <span>2332 ريال سعودي </span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <i class="fas fa-calendar-alt"></i> <span>16/3/2021</span> </p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single order -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- نهاية في انتظار الجامعة -->
+
+                            <!-- بداية مشتريات تامة -->
+                            <div id="completed" class="tab-pane fade">
+                                <div class="studentsInfo mt-4">
+                                    <div class="row">
+                                        <!-- start single order -->
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="item d-flex justify-content-start align-items-center">
+                                                <a href="buysDetails.html"><span class="buys">المشتريات <i class="fas fa-chevron-left"></i></span></a>
+                                                <div class="idImage">
+                                                    <img src="images/fisal.png" alt="">
+                                                </div>
+            
+                                                <div class="d-flex flex-column">
+                                                    <p class="d-flex flex-row align-items-center orderNum"> رقم الطلب <span>123</span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <img src="images/Group 32270.png" alt="" class="mony"> <span>2332 ريال سعودي </span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <i class="fas fa-calendar-alt"></i> <span>16/3/2021</span> </p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single order -->
+
+                                        <!-- start single order -->
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="item d-flex justify-content-start align-items-center">
+                                                <a href="buysDetails.html"><span class="buys">المشتريات <i class="fas fa-chevron-left"></i></span></a>
+                                                <div class="idImage">
+                                                    <img src="images/fisal.png" alt="">
+                                                </div>
+            
+                                                <div class="d-flex flex-column">
+                                                    <p class="d-flex flex-row align-items-center orderNum"> رقم الطلب <span>123</span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <img src="images/Group 32270.png" alt="" class="mony"> <span>2332 ريال سعودي </span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <i class="fas fa-calendar-alt"></i> <span>16/3/2021</span> </p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single order -->
+                                    </div>
+            
+                                    <div class="row">
+                                        <!-- start single order -->
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="item d-flex justify-content-start align-items-center">
+                                                <a href="buysDetails.html"><span class="buys">المشتريات <i class="fas fa-chevron-left"></i></span></a>
+                                                <div class="idImage">
+                                                    <img src="images/fisal.png" alt="">
+                                                </div>
+            
+                                                <div class="d-flex flex-column">
+                                                    <p class="d-flex flex-row align-items-center orderNum"> رقم الطلب <span>123</span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <img src="images/Group 32270.png" alt="" class="mony"> <span>2332 ريال سعودي </span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <i class="fas fa-calendar-alt"></i> <span>16/3/2021</span> </p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single order -->
+            
+                                        <!-- start single order -->
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="item d-flex justify-content-start align-items-center">
+                                                <a href="buysDetails.html"><span class="buys">المشتريات <i class="fas fa-chevron-left"></i></span></a>
+                                                <div class="idImage">
+                                                    <img src="images/fisal.png" alt="">
+                                                </div>
+            
+                                                <div class="d-flex flex-column">
+                                                    <p class="d-flex flex-row align-items-center orderNum"> رقم الطلب <span>123</span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <img src="images/Group 32270.png" alt="" class="mony"> <span>2332 ريال سعودي </span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <i class="fas fa-calendar-alt"></i> <span>16/3/2021</span> </p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single order -->
+                                    </div>
+            
+                                    <div class="row">
+                                        <!-- start single order -->
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="item d-flex justify-content-start align-items-center">
+                                                <a href="buysDetails.html"><span class="buys">المشتريات <i class="fas fa-chevron-left"></i></span></a>
+                                                <div class="idImage">
+                                                    <img src="images/fisal.png" alt="">
+                                                </div>
+            
+                                                <div class="d-flex flex-column">
+                                                    <p class="d-flex flex-row align-items-center orderNum"> رقم الطلب <span>123</span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <img src="images/Group 32270.png" alt="" class="mony"> <span>2332 ريال سعودي </span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <i class="fas fa-calendar-alt"></i> <span>16/3/2021</span> </p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single order -->
+            
+                                        <!-- start single order -->
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="item d-flex justify-content-start align-items-center">
+                                                <a href="buysDetails.html"><span class="buys">المشتريات <i class="fas fa-chevron-left"></i></span></a>
+                                                <div class="idImage">
+                                                    <img src="images/fisal.png" alt="">
+                                                </div>
+            
+                                                <div class="d-flex flex-column">
+                                                    <p class="d-flex flex-row align-items-center orderNum"> رقم الطلب <span>123</span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <img src="images/Group 32270.png" alt="" class="mony"> <span>2332 ريال سعودي </span> </p>
+                                                    <p class="d-flex flex-row align-items-center"> <i class="fas fa-calendar-alt"></i> <span>16/3/2021</span> </p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single order -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- نهاية مشتريات تامة -->
+                        </div>
+                        </div>
+                        <!-- نهاية طلبات الشراء -->
+                    </div>
+                    <!-- end tabs  content-->
+            </section>
+        </div>
+        <!-- end content of all tabs -->
+        
+        <!-- start footer -->
+        <section class="footer d-flex justify-content-around align-items-baseline">
+            <div class="overlay">
+                <img src="images/Mask Group 56.png" alt="footerBg">
+            </div>
+            <div class="main-container">
+
+                <div class="footerSocialIcons d-flex justify-content-center align-items-baseline">
+                    <hr class="right">
+                    <a href="#">
+                        <span class="youtube"><i class="fab fa-youtube"></i></span>
+                    </a>
+                    <a href="#">
+                        <span><i class="fab fa-instagram"></i></span>
+                    </a>
+                    <a href="#">
+                        <span><i class="fab fa-twitter"></i></span>
+                    </a>
+                    <a href="#">
+                        <span class="facebook"><i class="fab fa-facebook-f"></i></span>
+                    </a>
+                    <hr class="left">
+                </div>
+
+                <div class="row pt-5">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="logo">
+                            <a href="#"><img src="images/Group 31846.png" alt="" class="logoImage"></a>
+                            <p> هذا النص هو مثال لنص يمكن ان يوضع مكانه هذا النص هو مثال لنص يمكن ان يوضع مكانه هذا النص هو مثال لنص يمكن ان يوضع مكانه هذا النص هو مثال لنص يمكن ان يوضع مكانه</p>
+                        </div>
+                    </div>    
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="bestUnivers">
+                                <h3 class="main">اهم الجامعات لدينا</h3>
+                                <ul>
+                                    <li><a href="#"> 
+                                        <i class="far fa-window-minimize"></i>
+                                        جامعة الملك فيصل
+                                    </a></li>
+                                    <li><a href="#"> 
+                                        <i class="far fa-window-minimize"></i>
+                                        جامعة الملك عبدالعزيز
+                                    </a></li>
+                                    <li><a href="#">
+                                        <i class="far fa-window-minimize"></i>
+                                        جامعة الملك سعود
+                                    </a></li>
+                                    <li><a href="#">
+                                        <i class="far fa-window-minimize"></i>
+                                        جامعة الملك خالد
+                                    </a></li>
+                                    <li><a href="#">
+                                        <i class="far fa-window-minimize"></i>
+                                        جامعة  حائل
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="WhoAreWe">
+                                <h3 class="main">من نحن</h3>
+                                <ul>
+                                    <li><a href="#"> 
+                                        <i class="far fa-window-minimize"></i>
+                                        سياسة الخصوصية
+                                    </a></li>
+                                    <li><a href="#"> 
+                                        <i class="far fa-window-minimize"></i>
+                                        الاسئلة الشائعة
+                                    </a></li>
+                                    <li><a href="#">
+                                        <i class="far fa-window-minimize"></i>
+                                        تسجيل طالب
+                                    </a></li>
+                                    <li><a href="#">
+                                        <i class="far fa-window-minimize"></i>
+                                        تسجيل دكتور
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="callUs">
+                                <h3 class="main">اتصل بنا</h3>
+                                <ul>
+                                    <li><a href="#"> 
+                                        <i class="fas fa-phone-square-alt"></i>
+                                        01091194250
+                                    </a></li>
+                                    <li><a href="#"> 
+                                        <i class="fas fa-envelope"></i>
+                                        example@gmail.com
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <div class="copyRight">
+            <p>جميع الحقوق محفوظة لدى Exchange Knowledement</p>
+        </div>
+        <!-- end footer -->
+        <!-- back to top button -->
+        <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+            <button class="btn btn-primary" title="Back to Top">
+                <i class="fa fa-angle-double-up"></i>
+            </button>
+        </div>
+
+
+    <script src='js/all.min.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
