@@ -20,15 +20,6 @@ function remNav() {
   document.querySelector(".fa-bars").classList.remove("active");
 }
 
-// // start loader
-
-// window.onload = function(){
-// 	setTimeout(function(){
-// 	var loader = document.getElementsByClassName("loader")[0];
-// 	loader.className="loader fadeout" ;
-// 	setTimeout(function(){loader.style.display="none"},1000)
-// 	},1000)
-// }
 
 // sticky nav bar
 
@@ -148,14 +139,14 @@ $(window).on('scroll',function(){
 
 // go to tab from another page
 
-$(document).ready(function(){
+// $(document).ready(function(){
 
-  $('body [data-value]').on("click", function(e){
-  // e.preventDefault();
-  sessionStorage.setItem("lolo", $(this).attr('data-value'))
-});
+//   $('body [data-value]').on("click", function(e){
+//   // e.preventDefault();
+//   sessionStorage.setItem("lolo", $(this).attr('data-value'))
+// });
 
-setInterval(function () {$(sessionStorage.getItem('lolo')).tab('show')}, 400);
+// setInterval(function () {$(sessionStorage.getItem('lolo')).tab('show')}, 400);
 
   
-})
+// })
