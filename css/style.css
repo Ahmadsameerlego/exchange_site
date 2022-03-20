@@ -2587,7 +2587,7 @@ button.searchButton{
 
 .bookContent img.lazy {
     position: relative;
-    max-width: 400px;
+    max-width: 92%;
     display: block;
     margin-left: auto;
     margin-right: auto;
