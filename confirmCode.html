@@ -5,15 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--  fontawesome -->
     <link rel="stylesheet" href="css/all.min.css">
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.min.css">
+
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <!-- SweetAlert2 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- normalize for handle the page -->
     <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- main style -->
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/style-ltr.css"> -->
     <title>رمز التحقق</title>
@@ -232,21 +241,25 @@
     </div>
     <!-- end footer -->
 
+    <!-- fontawesome -->
     <script src='js/all.min.js'></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/main.js"></script>
+
+    <!-- sweet alert -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
 
+    <!-- bootstrap and fontawesome CDNs -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <!-- sweet alert script -->
     <script>
+        // success
         document.getElementById('success').onclick = function(){
-	            swal("Good job!", "You clicked the button!", "success");
+	        swal("Good job!", "You clicked the button!", "success");
     };
 
+    // fail
 
-
-    //the scond case => false =>dependom check ya tharawat
 	// // document.getElementById('success').onclick = function(){
     // //     swal({
     // //         title: "Are you sure?",

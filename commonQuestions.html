@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="ar">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
     <link rel="stylesheet" href="css/all.min.css">
+    <!-- boostrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- normalize for handle the page -->
     <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- main style -->
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/style-ltr.css"> -->
     <title>الاسئلة الشائعة</title>
@@ -38,7 +42,7 @@
                         <li class="nav-item"><a href="index.html">الرئيسية</a></li>
                         <li class="nav-item"><a href="universties.html">الجامعات</a></li>
                         <li class="nav-item"><a href="myBooks.html">المواد</a></li>
-                        <li class="nav-item"><a href="#">اتصل بنا</a></li>
+                        <li class="nav-item"><a href="callUs.html">اتصل بنا</a></li>
 
 
 
@@ -57,12 +61,12 @@
                             <i class="fas fa-bars" onclick="addNav()"></i>
                         </div>
                         <div class="alert">
-                            <a href="#"><i class="fas fa-bell"></i></a>
+                            <a href="alert.html"><i class="fas fa-bell"></i></a>
                             <span>0</span>
                         </div>
                         <div class="shCar">
 
-                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="chart1.html"><i class="fas fa-shopping-cart"></i></a>
                             <span>0</span>
                         </div>
 
@@ -80,7 +84,7 @@
                         </div>
 
                         <div class="logo">
-                            <a href="#"><img src="images/Group 31846.png" alt="" class="logoImage"></a>
+                            <a href="index.html"><img src="images/Group 31846.png" alt="" class="logoImage"></a>
                         </div>
                     </div>
                 </nav>
@@ -253,11 +257,14 @@
     </div>
     <!-- end footer -->
 
-    <script src='js/all.min.js'></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/main.js"></script>
+    <!--CDNs -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <!-- fontawesome -->
+    <script src='js/all.min.js'></script>
+
+    <!-- script for close and open common questions -->
     <script>
         var coll = document.getElementsByClassName("collapsible");
         var i;
